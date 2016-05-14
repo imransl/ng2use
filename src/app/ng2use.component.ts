@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header';
-import { FooterComponent } from './footer';
+import { HeaderComponent } from './shared/header';
+import { FooterComponent } from './shared/footer';
 
 @Component({
   moduleId: module.id,
