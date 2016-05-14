@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
-import { Block } from './block.model';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
@@ -11,7 +10,7 @@ export class BlockService {
   
   private blocksUrl = 'app/blocks/shared/block-data.json';
   
-  getBlocks(): Observable<Block[]> {
+  getBlocks(): Observable<Object>{
     return this.http.get(this.blocksUrl)
                     .map((res: Response) => res.json())
                     .catch(this.handleError);
