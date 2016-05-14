@@ -6,7 +6,7 @@ import { FooterComponent } from './footer';
   moduleId: module.id,
   selector: 'ng2use-app',
   templateUrl: 'ng2use.component.html',
-  directives: [FooterComponent]
+  directives: [HeaderComponent, FooterComponent]
 })
 export class Ng2useAppComponent {
   title = 'NG2USE';
