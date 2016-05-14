@@ -23,7 +23,11 @@ var barrels = [
     // App specific barrels.
     'app',
     'app/shared',
+    'app/copyrights',
     'app/footer',
+    'app/block',
+    'app/block-category',
+    'app/block-details',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
