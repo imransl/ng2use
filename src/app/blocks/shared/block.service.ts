@@ -9,11 +9,19 @@ export class BlockService {
 
   constructor(private http: Http) {}
   
-  blocksUrl = './block-data.json';
+  private blocksUrl = 'app/blocks/shared/block-data.json';
   
   getBlocks(): Observable<Block[]> {
     return this.http.get(this.blocksUrl)
-                    .map((res: Response) => res.json());
+                    .map((res: Response) => res.json())
+                    .catch(this.handleError);
+  }
+  
+  handleError(error: any) {
+    let errorMsg = error.message;
+    
+    console.error(errorMsg);
+    return Observable.throw(errorMsg);
   }
 
 }

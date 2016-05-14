@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Block } from '../';
+import { Block } from '../shared';
 
 @Component({
   moduleId: module.id,
