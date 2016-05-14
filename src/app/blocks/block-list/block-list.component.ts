@@ -1,29 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BlockCategoryComponent } from '../block-category';
-
 import { Block } from '../shared';
-import { BlockService } from '../shared';
 
 @Component({
   moduleId: module.id,
   selector: 'ngu-block-list',
   templateUrl: 'block-list.component.html',
-  directives: [BlockCategoryComponent],
-  providers: [BlockService]
+  directives: [BlockCategoryComponent]
 })
 export class BlockListComponent implements OnInit {
+  @Input() blocks: Block[];
 
-  constructor(private blockService: BlockService) { }
-
-  blockList: Block[];
+  constructor() { }
 
   ngOnInit() {
-    this.getBlocks();
   }
-
-  getBlocks() {
-    this.blockService.getBlocks()
-      .subscribe(blockList => this.blockList = blockList);
-  }
-
 }
