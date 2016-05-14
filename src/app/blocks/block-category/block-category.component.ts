@@ -10,10 +10,13 @@ export class BlockCategoryComponent implements OnInit {
 
   constructor() {}
   
+  categoryBlocks: Block[];
+  
   @Input() blocks: Block[];
   @Input() category: string;
 
   ngOnInit() {
+    this.categoryBlocks = this.blocks.filter(block => block.category === this.category);
   }
 
 }
