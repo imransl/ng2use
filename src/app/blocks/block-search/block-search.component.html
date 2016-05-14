@@ -1,4 +1,4 @@
 <section>
   <label for="block-search">Search: </label>
-  <input type="search" id="block-search">
+  <input #searchTerm type="search" id="block-search" (keyup)="update.emit(searchTerm.value)">
 </section>

@@ -10,6 +10,7 @@ import { Block } from '../shared';
 })
 export class BlockListComponent implements OnInit {
   @Input() blocks: Block[];
+  @Input() searchTerm: string;
 
   constructor() { }
 

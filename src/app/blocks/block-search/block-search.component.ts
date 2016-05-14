@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'block-search.component.html'
 })
 export class BlockSearchComponent implements OnInit {
+  @Output() update = new EventEmitter();
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
   }
