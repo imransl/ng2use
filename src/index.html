@@ -6,6 +6,8 @@
   <base href="/">
   {{content-for 'head'}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,14 +25,21 @@
   -->
 </head>
 <body>
-  <ng2use-app>Loading...</ng2use-app>
-  
-  <!-- angular specific scripts -->  
+
+  <!-- pre loader -->
+  <ng2use-app>
+    <div class="google-loader">
+      <div class="dot">
+      </div>
+    </div>
+  <ng2use-app>
+
+  <!-- angular specific scripts -->
   <script src="vendor/es6-shim/es6-shim.js"></script>
   <script src="vendor/reflect-metadata/Reflect.js"></script>
   <script src="vendor/systemjs/dist/system.src.js"></script>
   <script src="vendor/zone.js/dist/zone.js"></script>
-  
+
   <!-- other scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
