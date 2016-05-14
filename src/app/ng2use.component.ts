@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { FooterComponent } from './footer';
 
 @Component({
   moduleId: module.id,
   selector: 'ng2use-app',
   templateUrl: 'ng2use.component.html',
-  styleUrls: ['ng2use.component.css']
+  directives: [FooterComponent]
 })
 export class Ng2useAppComponent {
-  title = 'ng2use works!';
+  title = 'NG2USE';
 }
