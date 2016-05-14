@@ -9,25 +9,25 @@ import {
 import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { FilterComponent } from './filter.component';
+import { BlockSearchComponent } from './block-search.component';
 
-describe('Component: Filter', () => {
+describe('Component: BlockSearch', () => {
   let builder: TestComponentBuilder;
 
-  beforeEachProviders(() => [FilterComponent]);
+  beforeEachProviders(() => [BlockSearchComponent]);
   beforeEach(inject([TestComponentBuilder], function (tcb: TestComponentBuilder) {
     builder = tcb;
   }));
 
-  it('should inject the component', inject([FilterComponent],
-      (component: FilterComponent) => {
+  it('should inject the component', inject([BlockSearchComponent],
+      (component: BlockSearchComponent) => {
     expect(component).toBeTruthy();
   }));
 
   it('should create the component', inject([], () => {
-    return builder.createAsync(FilterComponentTestController)
+    return builder.createAsync(BlockSearchComponentTestController)
       .then((fixture: ComponentFixture<any>) => {
-        let query = fixture.debugElement.query(By.directive(FilterComponent));
+        let query = fixture.debugElement.query(By.directive(BlockSearchComponent));
         expect(query).toBeTruthy();
         expect(query.componentInstance).toBeTruthy();
       });
@@ -37,10 +37,10 @@ describe('Component: Filter', () => {
 @Component({
   selector: 'test',
   template: `
-    <ngu-filter></ngu-filter>
+    <ngu-block-search></ngu-block-search>
   `,
-  directives: [FilterComponent]
+  directives: [BlockSearchComponent]
 })
-class FilterComponentTestController {
+class BlockSearchComponentTestController {
 }
 
