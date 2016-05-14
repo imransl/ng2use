@@ -30,6 +30,7 @@ var barrels = [
     'app/block-details',
     'app/search',
     'app/filter',
+    'app/header',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
