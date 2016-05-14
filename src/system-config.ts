@@ -34,6 +34,8 @@ const barrels: string[] = [
   'app/block',
   'app/block-category',
   'app/block-details',
+  'app/search',
+  'app/filter',
   /** @cli-barrel */
 ];
 
