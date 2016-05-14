@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { BlockCategoryComponent } from '../block-category';
+import { BlockCategoryComponent } from '../';
+
+import { Block } from '../';
+import { BlockService } from '../';
 
 @Component({
   moduleId: module.id,
@@ -9,9 +12,17 @@ import { BlockCategoryComponent } from '../block-category';
 })
 export class BlockListComponent implements OnInit {
 
-  constructor() {}
+  constructor(private blockService: BlockService) {}
+  
+  blockList: Block[];
 
   ngOnInit() {
+    this.getBlocks();
+  }
+  
+  getBlocks() {
+    this.blockService.getBlocks()
+                      .subscribe(blocks => this.blockList = blocks);
   }
 
 }
