@@ -33,7 +33,6 @@ const barrels: string[] = [
   'app/shared/footer',
   'app/blocks',
   'app/blocks/shared',
-  'app/blocks/block',
   'app/blocks/block-category',
   'app/blocks/block-details',
   'app/blocks/block-list',
