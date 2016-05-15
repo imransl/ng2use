@@ -1,9 +1,11 @@
-<section>
-  <ul>
-    <li><a (click)="update.emit('')">All</a></li>
-    <li><a (click)="update.emit('stable')">Stable</a></li>
-    <li><a (click)="update.emit('rc')">Release Candidate</a></li>
-    <li><a (click)="update.emit('beta')">Beta</a></li>
-    <li><a (click)="update.emit('alpha')">Alpha</a></li>
-  </ul>
+<section class="section section-filter">
+  <div class="container">
+    <div class="row center">
+      <a class="waves-effect waves-light btn grey" (click)="update.emit('stable')">All</a>
+      <a class="waves-effect waves-light btn green" (click)="update.emit('rc')">RC</a>
+      <a class="waves-effect waves-light btn orange" (click)="update.emit('beta')">Beta</a>
+      <a class="waves-effect waves-light btn red" (click)="update.emit('alpha')">Alpha</a>
+    </div>
+  </div>
 </section>
+

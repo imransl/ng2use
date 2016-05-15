@@ -1,4 +1,18 @@
-<section>
-  <label for="block-search">Search: </label>
-  <input #searchTerm type="search" id="block-search" (keyup)="update.emit(searchTerm.value)">
+<section class="section no-pad-bot top-banner" id="index-banner">
+  <div class="container">
+    <h1 class="header center white-text">Search For NG</h1>
+    <div class="row center">
+      <nav>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field  light-blue darken-3">
+              <input #searchTerm type="search" id="block-search" (keyup)="update.emit(searchTerm.value)">
+              <label for="block-search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
 </section>
