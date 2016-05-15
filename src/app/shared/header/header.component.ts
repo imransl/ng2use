@@ -1,4 +1,4 @@
-import { Component, ElementRef, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 declare var jQuery:any;
 
@@ -8,14 +8,9 @@ declare var jQuery:any;
   templateUrl: 'header.component.html'
 })
 export class HeaderComponent implements OnInit {
-  elementRef: ElementRef;
 
-  constructor(@Inject(ElementRef) elementRef: ElementRef) {
-    this.elementRef = elementRef;
-  }
+  constructor() {}
 
-  ngOnInit() {
-    jQuery(this.elementRef.nativeElement).find('.button-collapse').sideNav();
-  }
+  ngOnInit() {}
 
 }
