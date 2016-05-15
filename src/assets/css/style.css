@@ -169,3 +169,7 @@
   position: relative;
   z-index: 2;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #block-search  { height: 64px;  }
+}
