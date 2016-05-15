@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HTTP_PROVIDERS } from '@angular/http';
 
 import { BlockSearchComponent } from './block-search';
 import { BlockFilterComponent } from './block-filter';
@@ -14,7 +13,7 @@ import { BlockService } from './shared';
   selector: 'ngu-blocks',
   templateUrl: 'blocks.component.html',
   directives: [BlockSearchComponent, BlockFilterComponent, BlockListComponent],
-  providers: [HTTP_PROVIDERS, BlockService]
+  providers: [BlockService]
 })
 export class BlocksComponent implements OnInit {
   constructor(private blockService: BlockService) {}
