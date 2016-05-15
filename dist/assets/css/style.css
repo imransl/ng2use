@@ -192,7 +192,7 @@
 
 
 /*------------------------------------*\
-    3. CHARACTER
+    3. MISC
 \*------------------------------------*/
 
 .character {
@@ -221,4 +221,8 @@ blockquote {
 
 .collapsible-header {
   color: #FFF;
+}
+
+footer {
+  padding-bottom: 1rem;
 }
