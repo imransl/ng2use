@@ -1,3 +1,7 @@
-<p>
-  block-details works!
-</p>
+<section>
+  <p *ngIf="details.description">{{details.description}}</p>
+  <p *ngIf="details.watchers">{{details.watchers}} people watching</p>
+  <p *ngIf="details.homepage">Homepage at <a [href]="details.homepage">{{details.homepage}}</a></p>
+  <p *ngIf="details.updated_at">Last update on {{details.updated_at | date}}</p>
+  <p *ngIf="details.htl_url">Github Repo: <a [href]="details.html_url">{{details.html_url}}</a></p>
+</section>

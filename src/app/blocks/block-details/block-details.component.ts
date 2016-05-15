@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { BlockService } from '../shared';
 
 @Component({
   moduleId: module.id,
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'block-details.component.html'
 })
 export class BlockDetailsComponent implements OnInit {
+  @Input() block;
+  details = {};
 
-  constructor() {}
+  constructor(private blockService: BlockService) {}
 
   ngOnInit() {
+    this.getBlockDetails();
+  }
+  
+  getBlockDetails() {
+    this.blockService.getBlockDetails(this.block.repo)
+      .subscribe(details => this.details = details);
   }
 
 }
