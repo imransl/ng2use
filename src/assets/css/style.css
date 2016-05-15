@@ -164,6 +164,15 @@
   padding-top: 0;
 }
 
+.section.section-filter a {
+  margin-bottom: 5px;
+}
+
+.section.section-filter .selected-filter {
+  font-weight: bold;
+  border: 1px solid #FFF;
+}
+
 .card {
   border: 1px solid #CCC;
   /*box-shadow: none;*/

@@ -7,11 +7,17 @@ import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 })
 export class BlockFilterComponent implements OnInit {
   @Output() update = new EventEmitter();
+  selectedFilter: string;
 
   constructor() {}
 
   ngOnInit() {
     this.update.emit('');
+    this.selectedFilter = '';
   }
 
+  changeFilter(type) {
+    this.selectedFilter = type;
+    this.update.emit(type);
+  } 
 }
