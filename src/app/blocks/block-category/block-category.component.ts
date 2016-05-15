@@ -15,6 +15,7 @@ declare var jQuery: any;
 })
 export class BlockCategoryComponent implements OnInit {
   elementRef: ElementRef;
+  accordion;
 
   constructor(@Inject(ElementRef) elementRef: ElementRef) {
     this.elementRef = elementRef;
@@ -29,7 +30,8 @@ export class BlockCategoryComponent implements OnInit {
 
   ngOnInit() {
     this.categoryBlocks = this.blocks.filter(block => block.category === this.category);
-    jQuery(this.elementRef.nativeElement).find('.collapsible').collapsible();
+    this.accordion = jQuery(this.elementRef.nativeElement).find('.collapsible')
+    this.accordion.collapsible();
   }
   
   setBlockTitleClass(status) {
@@ -43,6 +45,7 @@ export class BlockCategoryComponent implements OnInit {
   }
   
   toggleBlockDetails(block) {
+    this.blocks.forEach(block => block['show'] = false);
     block.show = !block.show;
   }
 
