@@ -158,7 +158,7 @@
 }
 
 .section.section-filter{
-  padding-bottom: 3rem;
+  padding-bottom: 0;
   padding-top: 0;
 }
 
@@ -168,6 +168,9 @@
   padding: 20px;
   position: relative;
   z-index: 2;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-transform: capitalize;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
