@@ -2,8 +2,8 @@
   <div class="card-title">{{category}}</div>
 
   <div class="card-content">
-    <ul class="collapsible popout" data-collapsible="accordion" *ngFor="let block of (categoryBlocks | blockSearch: searchTerm | blockFilter: filterTerm)">
-      <li>
+    <ul class="collapsible popout" data-collapsible="accordion">
+      <li *ngFor="let block of (categoryBlocks | blockSearch: searchTerm | blockFilter: filterTerm)">
         <div class="collapsible-header" [ngClass]="setBlockTitleClass(block.status)">Angular Core <i class="material-icons">add</i></div>
         <div class="collapsible-body">
           <p>Lorem ipsum dolor sit amet.</p>
