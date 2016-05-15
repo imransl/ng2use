@@ -1,19 +1,32 @@
-<h2>{{category}}</h2>
-
 <section class="section no-pad-bot section-cat-block">
   <div class="container">
     <div class="row">
-      <div class="col s12 m6" *ngFor="let block of (categoryBlocksOdd | blockSearch: searchTerm | blockFilter: filterTerm)">
-        <div class="card-panel">
-          <h4>{{block.name}}</h4>
-          <span>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
+      <div class="col s12 m6">
+
+        <div class="card hoverable">
+          <div class="card-title">Card Title</div>
+          <div class="card-content">
+
+            <ul class="collapsible popout" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header green">First <i class="material-icons">add</i></div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header yellow"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header red"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+            </ul>
+
+          </div>
         </div>
       </div>
-      <div class="col s12 m6" *ngFor="let block of (categoryBlocksEven | blockSearch: searchTerm | blockFilter: filterTerm)">
+      <div class="col s12 m6">
         <div class="card-panel">
-          <h4>{{block.name}}</h4>
           <span>I am a very simple card. I am good at containing small bits of information.
           I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
           </span>
@@ -22,3 +35,7 @@
     </div>
   </div>
 </section>
+
+
+<h2>{{category}}</h2>
+<article *ngFor="let block of (categoryBlocks | blockSearch: searchTerm | blockFilter: filterTerm)">{{block.name}}</article>
