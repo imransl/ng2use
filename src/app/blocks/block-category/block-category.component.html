@@ -1,10 +1,14 @@
-<h2>{{category}}</h2>
+<div class="card hoverable">
+  <div class="card-title">{{category}}</div>
 
-<ul class="collapsible popout" data-collapsible="accordion" *ngFor="let block of (categoryBlocks | blockSearch: searchTerm | blockFilter: filterTerm)">
-  <li>
-    <div class="collapsible-header green">Angular Core <i class="material-icons">add</i></div>
-    <div class="collapsible-body">
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-  </li>
-</ul>
+  <div class="card-content">
+    <ul class="collapsible popout" data-collapsible="accordion" *ngFor="let block of (categoryBlocks | blockSearch: searchTerm | blockFilter: filterTerm)">
+      <li>
+        <div class="collapsible-header" [ngClass]="setBlockTitleClass(block.status)">Angular Core <i class="material-icons">add</i></div>
+        <div class="collapsible-body">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
