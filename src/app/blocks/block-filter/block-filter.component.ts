@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'block-filter.component.html'
 })
 export class BlockFilterComponent implements OnInit {
+  @Output() update = new EventEmitter();
 
   constructor() {}
 
   ngOnInit() {
+    this.update.emit('');
   }
 
 }

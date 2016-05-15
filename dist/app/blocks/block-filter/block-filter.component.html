@@ -1,8 +1,9 @@
 <section>
   <ul>
-    <li><a href="">Stable</a></li>
-    <li><a href="">Release Candidate</a></li>
-    <li><a href="">Beta</a></li>
-    <li><a href="">Alpha</a></li>
+    <li><a (click)="update.emit('')">All</a></li>
+    <li><a (click)="update.emit('stable')">Stable</a></li>
+    <li><a (click)="update.emit('rc')">Release Candidate</a></li>
+    <li><a (click)="update.emit('beta')">Beta</a></li>
+    <li><a (click)="update.emit('alpha')">Alpha</a></li>
   </ul>
 </section>

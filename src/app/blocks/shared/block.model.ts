@@ -3,4 +3,5 @@ export class Block {
     name: string;
     repo: string;
     category: string;
+    status: string;
 }
