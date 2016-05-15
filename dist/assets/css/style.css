@@ -159,8 +159,5 @@
 
 .section.section-filter{
   padding-bottom: 3rem;
-  padding-top: 4rem;
-}
-.section.section-filter .btn{
-  margin-bottom: 1rem;
+  padding-top: 0;
 }
