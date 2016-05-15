@@ -20,8 +20,8 @@ export class BlockDetailsComponent implements OnInit {
   getBlockDetails() {
     this.blockService.getBlockDetails(this.block.repo)
       .subscribe(details => {
+        details['updated_at'] = new Date(details['updated_at']);
         this.details = details;
-        this.details['updated_at'] = new Date(this.details['updated_at']);
       });
   }
 
