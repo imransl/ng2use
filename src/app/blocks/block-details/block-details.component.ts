@@ -13,7 +13,8 @@ export class BlockDetailsComponent implements OnInit {
   constructor(private blockService: BlockService) {}
 
   ngOnInit() {
-    this.getBlockDetails();
+    this.block.image = 'assets/images/characters/' + this.block.character + '.svg';
+    // this.getBlockDetails();
   }
   
   getBlockDetails() {
