@@ -25,21 +25,21 @@
         "name": "Angular 2 Firebase",
         "repo": "angular/angularfire2",
         "category": "official",
-        "status": "rc"
+        "status": "beta"
     },
     {
         "id": 5,
         "name": "Angular CLI",
         "repo": "angular/angular-cli",
         "category": "official",
-        "status": "rc"
+        "status": "beta"
     },
     {
         "id": 6,
         "name": "Angular Material 2",
         "repo": "angular/material2",
         "category": "official",
-        "status": "rc"
+        "status": "alpha"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "name": "Reactive Router",
         "repo": "ngrx/router",
         "category": "ngrx",
-        "status": "alpha"
+        "status": "beta"
     },
     {
         "id": 10,
@@ -88,7 +88,7 @@
         "name": "NG2 Bootstrap",
         "repo": "valor-software/ng2-bootstrap",
         "category": "ui",
-        "status": "beta"
+        "status": "rc"
     },
     {
         "id": 14,
