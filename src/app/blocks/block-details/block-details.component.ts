@@ -14,12 +14,15 @@ export class BlockDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.block.image = 'assets/images/characters/' + this.block.character + '.svg';
-    // this.getBlockDetails();
+    this.getBlockDetails();
   }
   
   getBlockDetails() {
     this.blockService.getBlockDetails(this.block.repo)
-      .subscribe(details => this.details = details);
+      .subscribe(details => {
+        this.details = details;
+        this.details['updated_at'] = new Date(this.details['updated_at']);
+      });
   }
 
 }
