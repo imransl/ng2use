@@ -7,9 +7,7 @@ import { Block } from './block.model';
 export class BlockSearchPipe implements PipeTransform {
     transform(blocks: Block[], arg: string) {
         if (arg) {
-            return blocks.filter(block => {
-                return name.toLowerCase().indexOf(arg.toLocaleLowerCase()) > -1;
-            });
+            return blocks.filter(block => block.name.toLowerCase().indexOf(arg.toLowerCase()) > -1);
         } else {
             return blocks;
         }
