@@ -1,3 +1,11 @@
-<ngu-block-search (update)="searchTerm = $event"></ngu-block-search>
-<ngu-block-filter (update)="filterTerm = $event"></ngu-block-filter>
+<section class="section no-pad-bot top-banner" id="index-banner">
+    <div class="container">
+        <h3 class="header center white-text">Can I use</h3>
+        <div class="row center">
+            <ngu-block-search (update)="searchTerm = $event"></ngu-block-search>
+            <ngu-block-filter (update)="filterTerm = $event"></ngu-block-filter>
+        </div>
+    </div>
+</section>
+
 <ngu-block-list [searchTerm]="searchTerm" [filterTerm]="filterTerm" [blocks]="blockList"></ngu-block-list>
