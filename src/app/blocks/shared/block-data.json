@@ -165,13 +165,13 @@
         "name": "Fuel UI",
         "repo": "FuelInteractive/fuel-ui",
         "category": "ui",
-        "status": "beta"
+        "status": "rc"
     },
     {
         "id": 25,
         "name": "PrimeNG",
         "repo": "primefaces/primeng",
         "category": "ui",
-        "status": "beta"
+        "status": "rc"
     }
 ]
