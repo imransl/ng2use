@@ -13,7 +13,8 @@ export class BlockCategoryComponent implements OnInit {
 
   constructor() {}
   
-  categoryBlocks: Block[];
+  categoryBlocksOdd: Block[];
+  categoryBlocksEven: Block[];
   
   @Input() blocks: Block[];
   @Input() category: string;
@@ -21,7 +22,10 @@ export class BlockCategoryComponent implements OnInit {
   @Input() filterTerm: string;
 
   ngOnInit() {
-    this.categoryBlocks = this.blocks.filter(block => block.category === this.category);
+    const categoryBlocks: Block[] = this.blocks.filter(block => block.category === this.category);
+    
+    this.categoryBlocksEven = categoryBlocks.filter((block, index) => index % 2 !== 1);
+    this.categoryBlocksOdd = this.categoryBlocksEven.filter((block,index) => index % 2 === 0);
   }
 
 }
