@@ -35,7 +35,7 @@ export class BlockCategoryComponent implements OnInit {
   setBlockTitleClass(status) {
     switch (status) {
       case 'stable': return 'green';
-      case 'rc': return 'yellow';
+      case 'rc': return 'blue';
       case 'beta': return 'orange';
       case 'alpha': return 'red';
       default: return 'grey';

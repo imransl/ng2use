@@ -150,6 +150,8 @@
   font-family: 'Audiowide', cursive;
   font-weight: 400;
   font-size: 16px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section.top-banner{
@@ -162,15 +164,26 @@
   padding-top: 0;
 }
 
+.card {
+  border: 1px solid #CCC;
+  /*box-shadow: none;*/
+}
+
 .card .card-title {
   background-color: inherit;
-  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  border-bottom: 1px solid #CCC;
   padding: 20px;
   position: relative;
   z-index: 2;
-  font-weight: 500;
-  padding: 10px 20px;
-  text-transform: capitalize;
+  /*font-weight: 500;*/
+  font-size: 20px;
+  padding: 10px 25px;
+  /*text-align: center;*/
+  text-transform: uppercase;
+}
+
+.card .card-content {
+  padding: 10px 0;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -204,4 +217,8 @@
 blockquote {
   clear: both;
   font-size: 16px;
+}
+
+.collapsible-header {
+  color: #FFF;
 }
