@@ -1,5 +1,6 @@
 import { Component, ElementRef, Inject, Input, OnInit } from '@angular/core';
 import { Block } from '../shared';
+import { BlockDetailsComponent } from '../block-details';
 import { BlockSearchPipe } from '../shared';
 import { BlockFilterPipe } from '../shared';
 
@@ -9,6 +10,7 @@ declare var jQuery: any;
   moduleId: module.id,
   selector: 'ngu-block-category',
   templateUrl: 'block-category.component.html',
+  directives: [BlockDetailsComponent],
   pipes: [BlockSearchPipe, BlockFilterPipe]
 })
 export class BlockCategoryComponent implements OnInit {
@@ -38,6 +40,10 @@ export class BlockCategoryComponent implements OnInit {
       case 'alpha': return 'red';
       default: return 'grey';
     };
+  }
+  
+  toggleBlockDetails(block) {
+    block.show = !block.show;
   }
 
 }
