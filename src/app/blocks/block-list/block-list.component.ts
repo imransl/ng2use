@@ -1,6 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Inject, Input, OnInit } from '@angular/core';
 import { BlockCategoryComponent } from '../block-category';
 import { Block } from '../shared';
+
+declare var jQuery: any;
 
 @Component({
   moduleId: module.id,
@@ -9,12 +11,24 @@ import { Block } from '../shared';
   directives: [BlockCategoryComponent]
 })
 export class BlockListComponent implements OnInit {
+  elementRef: ElementRef;
+
   @Input() blocks: Block[];
   @Input() searchTerm: string;
   @Input() filterTerm: string;
 
-  constructor() { }
+  constructor( @Inject(ElementRef) elementRef: ElementRef) {
+    this.elementRef = elementRef;
+  }
 
   ngOnInit() {
+    const container = jQuery(this.elementRef.nativeElement).find('.masonry-container');
+
+    container.imagesLoaded(function () {
+      container.masonry({
+        columnWidth: '.item',
+        itemSelector: '.item'
+      });
+    });
   }
 }
