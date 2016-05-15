@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Angular 2",
-        "repo": "anglar/angular",
+        "repo": "angular/angular",
         "category": "official",
         "status": "rc"
     },

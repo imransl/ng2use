@@ -20,16 +20,11 @@ export class BlockService {
   
   getBlockDetails(repo): Observable<JSON> {
     const url = this.githubUrl + repo;
+    
     return this.http.get(url)
-      .map(this.processData)
+      .map((res: Response) => res.json())
       .cache()
       .catch(this.handleError);
-  }
-  
-  processData(res: Response) {
-    let json = res.json();
-    console.log(json);
-    return json;
   }
 
   handleError(error: any) {
