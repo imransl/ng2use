@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, Inject, Input, AfterViewChecked } from '@angular/core';
+import { Component, ViewChild, ElementRef, Inject, Input } from '@angular/core';
 import { BlockCategoryComponent } from '../block-category';
 import { Block } from '../shared';
 
@@ -10,25 +10,10 @@ declare var jQuery: any;
   templateUrl: 'block-list.component.html',
   directives: [BlockCategoryComponent]
 })
-export class BlockListComponent implements AfterViewChecked {
-  elementRef: ElementRef;
-
+export class BlockListComponent {
   @Input() blocks: Block[];
   @Input() searchTerm: string;
   @Input() filterTerm: string;
 
-  constructor(@Inject(ElementRef) elementRef: ElementRef) {
-    this.elementRef = elementRef;
-  }
-
-  ngAfterViewChecked() {
-    const container = jQuery(this.elementRef.nativeElement).find('.masonry-container');
-
-    container.imagesLoaded(function () {
-      container.masonry({
-        columnWidth: '.item',
-        itemSelector: '.item'
-      });
-    });
-  }
+  constructor() {}
 }
