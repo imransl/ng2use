@@ -17,6 +17,5 @@ describe('App: Ng2use', () => {
 
   it('should have as title \'ng2use works!\'',
       inject([Ng2useAppComponent], (app: Ng2useAppComponent) => {
-    expect(app.title).toEqual('ng2use works!');
   }));
 });
