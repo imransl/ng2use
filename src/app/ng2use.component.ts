@@ -13,5 +13,4 @@ import { BlocksComponent } from './blocks';
   providers: [HTTP_PROVIDERS]
 })
 export class Ng2useAppComponent {
-  title = 'NG2USE';
 }
