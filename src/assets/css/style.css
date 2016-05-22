@@ -1,165 +1,41 @@
-/**
- * CONTENTS
- *
- * 1. PRE LOADER
- *
- * 2. LOGO
- *
- * 3. GENERIC
- *
- * 4. BASE
- *
- * 5. OBJECTS
- *
- */
+/* COMMON */
 
-/*------------------------------------*\
-    1. PRE LOADER
-\*------------------------------------*/
 * {
   box-sizing: border-box;
 }
 
-.google-loader {
-  height: 30px;
-  width: 30px;
-  position: relative;
-  margin: 94px auto 0 auto;
-}
-.google-loader .dot {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  border-radius: 50px;
-  background: #df4a42;
-  border-right: 0px solid #ffd649;
-  border-left: 15px solid #df4a42;
-  border-top: 0px solid transparent;
-  border-bottom: 0px solid transparent;
-  animation: flippingAnimation 2s linear infinite;
-}
 
-@keyframes opacity {
-  to {
-    opacity: 0;
-  }
-}
-@keyframes flippingAnimation {
-  /* RED TO YELLOW */
-  0% {
-    border-right: 0px solid #ffc500;
-    display: block;
-  }
-  12.4% {
-    background: #ed726c;
-  }
-  12.5% {
-    border-right: 15px solid #ffd649;
-    border-left: 15px solid #df4a42;
-    background: #ffe486;
-  }
-  24.9% {
-    border-right: 15px solid #ffd649;
-    background: #ffd649;
-    border-left: 0px solid #d8291f;
-    border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent;
-  }
-  /* Yellow to Green */
-  25% {
-    border-right: 0px solid #ffd649;
-    border-left: 0px solid #d8291f;
-    border-top: 15px solid #ffd649;
-    border-bottom: 0px solid #ffd649;
-    background: #ffd649;
-  }
-  37.4% {
-    background: #ffde6e;
-  }
-  37.5% {
-    border-right: 0px solid transparent;
-    border-left: 0px solid transparent;
-    border-top: 15px solid #ffd649;
-    border-bottom: 15px solid #28ad6b;
-    background: #109f58;
-  }
-  49.9% {
-    border-right: 0px solid transparent;
-    border-left: 0px solid transparent;
-    border-top: 0px solid #ffd649;
-    border-bottom: 15px solid #28ad6b;
-    background: #28ad6b;
-  }
-  /* Green to Blue */
-  50% {
-    border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-left: 0px solid #377af6;
-    border-right: 15px solid #28ad6b;
-    background: #28ad6b;
-  }
-  62.4% {
-    background: #2abb71;
-  }
-  62.5% {
-    border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-left: 15px solid #377af6;
-    border-right: 15px solid #28ad6b;
-    background: #518af4;
-  }
-  74.9% {
-    border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-left: 15px solid #377af6;
-    border-right: 0px solid #28ad6b;
-    background: #377af6;
-  }
-  /* Blue to Red */
-  75% {
-    border-top: 0px solid #df4a42;
-    border-bottom: 15px solid #377af6;
-    border-left: 0px solid transparent;
-    border-right: 0px solid transparent;
-    background: #377af6;
-  }
-  87.4% {
-    background: #316bd7;
-  }
-  87.5% {
-    border-top: 15px solid #df4a42;
-    border-bottom: 15px solid #377af6;
-    border-left: 0px solid transparent;
-    border-right: 0px solid transparent;
-    background: #f26c65;
-  }
-  100% {
-    border-top: 15px solid #df4a42;
-    border-bottom: 0px solid #377af6;
-    border-left: 0px solid transparent;
-    border-right: 0px solid transparent;
-    background: #df4a42;
-  }
-}
-
-/*------------------------------------*\
-    2. LOGO
-\*------------------------------------*/
-.brand-logo{
-  font-family: 'Audiowide', cursive;
-  font-weight: 400;
+blockquote {
+  clear: both;
   font-size: 16px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-.section.top-banner{
-  background: url("../images/dark-mosaic.png") repeat #024DAD;
+input {
+  transition: all 0.25s;
+}
+
+footer {
+  padding-bottom: 1rem;
+}
+
+/* TOP BAR AND BANNER */
+
+nav .nav-wrapper {
+  overflow: hidden;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  nav .nav-wrapper .search {
+    height: 64px;
+  }
+}
+
+.section.top-banner {
+  background-color: #0D47A1;
   padding-bottom: 4rem;
 }
 
-.section.section-filter{
+.section.section-filter {
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -169,40 +45,28 @@
 }
 
 .section.section-filter .selected-filter {
-  font-weight: bold;
   border: 1px solid #FFF;
 }
 
+/* CARDS */
+
 .card {
   border: 1px solid #CCC;
-  /*box-shadow: none;*/
 }
 
 .card .card-title {
   background-color: inherit;
   border-bottom: 1px solid #CCC;
-  padding: 20px;
-  position: relative;
-  z-index: 2;
-  /*font-weight: 500;*/
   font-size: 20px;
   padding: 10px 25px;
-  /*text-align: center;*/
+  position: relative;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .card .card-content {
   padding: 10px 0;
 }
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  #block-search  { height: 64px;  }
-}
-
-
-/*------------------------------------*\
-    3. MISC
-\*------------------------------------*/
 
 .character {
   float: right;
@@ -223,15 +87,52 @@
   padding-bottom: 0;
 }
 
-blockquote {
-  clear: both;
-  font-size: 16px;
-}
-
 .collapsible-header {
   color: #FFF;
 }
 
-footer {
-  padding-bottom: 1rem;
+/* FONTS & ICONS */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.woff2') format('woff2'), url('../fonts/fontello.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon:before {
+  display: inline-block;
+  font-family: 'fontello';
+  font-size: 0.8em;
+  font-style: normal;
+  line-height: 1em;
+  margin-left: .2em;
+  margin-right: .2em;
+  text-align: center;
+  top: -3px;
+  position: relative;
+  speak: none;
+  width: 1em;
+  
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-search:before {
+  content: '\e800';
+}
+
+.icon-plus:before {
+  content: '\e801';
+}
+
+.icon-minus:before {
+  content: '\e803';
 }
