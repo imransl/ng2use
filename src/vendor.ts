@@ -11,4 +11,4 @@ import 'rxjs';
 
 // styles
 import './assets/css/materialize.css';
-// import './assets/css/style.css';
+import './assets/css/style.css';
