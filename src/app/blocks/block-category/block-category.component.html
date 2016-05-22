@@ -4,7 +4,7 @@
   <div class="card-content">
     <ul class="collapsible popout" data-collapsible="accordion">
       <li *ngFor="let block of (categoryBlocks | blockSearch: searchTerm | blockFilter: filterTerm)" (click)="toggleBlockDetails(block)">
-        <div class="collapsible-header" [ngClass]="setBlockTitleClass(block.status)">{{block.name}}<i class="material-icons">add</i></div>
+        <div class="collapsible-header white-text" [ngClass]="setBlockTitleClass(block.status)">{{block.name}}<i class="icon icon-plus"></i></div>
         <div class="collapsible-body">
           <ngu-block-details *ngIf="block.show" [block]="block"></ngu-block-details>
         </div>
