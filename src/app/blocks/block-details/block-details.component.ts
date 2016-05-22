@@ -1,19 +1,20 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Block } from '../shared';
 import { BlockService } from '../shared';
 
 @Component({
   moduleId: module.id,
   selector: 'ngu-block-details',
-  templateUrl: 'block-details.component.html'
+  template: require('./block-details.component.html')
 })
 export class BlockDetailsComponent implements OnInit {
-  @Input() block;
+  @Input() block: Block;
   details = {};
 
   constructor(private blockService: BlockService) {}
 
   ngOnInit() {
-    this.block.image = 'assets/images/characters/' + this.block.character + '.svg';
+    this.block.character = 'assets/images/characters/' + this.block.character + '.svg';
     this.getBlockDetails();
   }
   

@@ -5,7 +5,7 @@ declare var jQuery:any;
 @Component({
   moduleId: module.id,
   selector: 'ngu-header',
-  templateUrl: 'header.component.html'
+  template: require('./header.component.html')
 })
 export class HeaderComponent implements OnInit {
 

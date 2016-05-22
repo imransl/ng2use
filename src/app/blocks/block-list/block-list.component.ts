@@ -7,7 +7,7 @@ declare var jQuery: any;
 @Component({
   moduleId: module.id,
   selector: 'ngu-block-list',
-  templateUrl: 'block-list.component.html',
+  template: require('./block-list.component.html'),
   directives: [BlockCategoryComponent]
 })
 export class BlockListComponent {

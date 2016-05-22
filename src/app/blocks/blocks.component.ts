@@ -11,7 +11,7 @@ import { BlockService } from './shared';
 @Component({
   moduleId: module.id,
   selector: 'ngu-blocks',
-  templateUrl: 'blocks.component.html',
+  template: require('./blocks.component.html'),
   directives: [BlockSearchComponent, BlockFilterComponent, BlockListComponent],
   providers: [BlockService]
 })
@@ -25,8 +25,7 @@ export class BlocksComponent implements OnInit {
   }
 
   getBlocks() {
-    this.blockService.getBlocks()
-      .subscribe(blockList => this.blockList = blockList);
+    this.blockList = this.blockService.getBlocks();
   }
 
 }

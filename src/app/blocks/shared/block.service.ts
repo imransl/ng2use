@@ -9,16 +9,14 @@ export class BlockService {
 
   constructor(private http: Http) { }
 
-  private blocksUrl = 'app/blocks/shared/block-data.json';
+  private blocks: Block[] = require('json!./block-data.json');
   private githubUrl = '//api.github.com/repos/';
 
-  getBlocks(): Observable<Block[]> {
-    return this.http.get(this.blocksUrl)
-      .map((res: Response) => res.json())
-      .catch(this.handleError);
+  getBlocks(): Block[] {
+    return this.blocks;
   }
   
-  getBlockDetails(repo): Observable<JSON> {
+  getBlockDetails(repo: string): Observable<JSON> {
     const url = this.githubUrl + repo;
     
     return this.http.get(url)

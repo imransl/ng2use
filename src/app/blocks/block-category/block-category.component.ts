@@ -4,22 +4,24 @@ import { BlockDetailsComponent } from '../block-details';
 import { BlockSearchPipe } from '../shared';
 import { BlockFilterPipe } from '../shared';
 
-declare var jQuery: any;
+// declare var jQuery: any;
 
 @Component({
   moduleId: module.id,
   selector: 'ngu-block-category',
-  templateUrl: 'block-category.component.html',
+  template: require('./block-category.component.html'),
   directives: [BlockDetailsComponent],
   pipes: [BlockSearchPipe, BlockFilterPipe]
 })
 export class BlockCategoryComponent implements OnInit {
-  elementRef: ElementRef;
-  accordion;
+  // elementRef: ElementRef;
+  // accordion: <any>;
 
-  constructor(@Inject(ElementRef) elementRef: ElementRef) {
-    this.elementRef = elementRef;
-  }
+  // constructor(@Inject(ElementRef) elementRef: ElementRef) {
+  //   this.elementRef = elementRef;
+  // }
+  
+  constructor() {}
   
   categoryBlocks: Block[];
   
@@ -30,11 +32,11 @@ export class BlockCategoryComponent implements OnInit {
 
   ngOnInit() {
     this.categoryBlocks = this.blocks.filter(block => block.category === this.category);
-    this.accordion = jQuery(this.elementRef.nativeElement).find('.collapsible')
-    this.accordion.collapsible();
+    // this.accordion = jQuery(this.elementRef.nativeElement).find('.collapsible')
+    // this.accordion.collapsible();
   }
   
-  setBlockTitleClass(status) {
+  setBlockTitleClass(status: string) {
     switch (status) {
       case 'stable': return 'green';
       case 'rc': return 'blue';
@@ -44,9 +46,9 @@ export class BlockCategoryComponent implements OnInit {
     };
   }
   
-  toggleBlockDetails(block) {
+  toggleBlockDetails(block: Block) {
     this.blocks.forEach(block => block['show'] = false);
-    block.show = !block.show;
+    // block.show = !block.show;
   }
 
 }
