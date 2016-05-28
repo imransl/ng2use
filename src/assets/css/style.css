@@ -24,7 +24,11 @@ nav .nav-wrapper {
   overflow: hidden;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+nav .nav-wrapper .search {
+  height: 56px;
+}
+
+@media only screen and (min-width: 601px) {
   nav .nav-wrapper .search {
     height: 64px;
   }
