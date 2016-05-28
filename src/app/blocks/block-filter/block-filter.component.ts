@@ -1,4 +1,5 @@
-import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Block } from '../shared';
 
 @Component({
   moduleId: module.id,
@@ -7,6 +8,7 @@ import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 })
 export class BlockFilterComponent implements OnInit {
   @Output() update = new EventEmitter();
+  
   selectedFilter: string;
 
   constructor() {}
@@ -16,8 +18,8 @@ export class BlockFilterComponent implements OnInit {
     this.selectedFilter = '';
   }
 
-  changeFilter(type: string) {
-    this.selectedFilter = type;
-    this.update.emit(type);
+  changeFilter(status: string) {
+    this.selectedFilter = status;
+    this.update.emit(status);
   } 
 }
