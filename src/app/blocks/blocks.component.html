@@ -8,4 +8,4 @@
     </div>
 </section>
 
-<ngu-block-list [searchTerm]="searchTerm" [filterTerm]="filterTerm" [blocks]="blockList"></ngu-block-list>
+<ngu-block-list [blocks]="blockList | blockSearch: searchTerm | blockFilter: filterTerm"></ngu-block-list>

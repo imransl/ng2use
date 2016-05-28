@@ -7,18 +7,21 @@ import { BlockListComponent } from './block-list';
 import { Block } from './shared';
 import { BlockService } from './shared';
 
+import { BlockFilterPipe } from './shared';
+import { BlockSearchPipe } from './shared';
 
 @Component({
   moduleId: module.id,
   selector: 'ngu-blocks',
   template: require('./blocks.component.html'),
   directives: [BlockSearchComponent, BlockFilterComponent, BlockListComponent],
-  providers: [BlockService]
+  providers: [BlockService],
+  pipes: [BlockFilterPipe, BlockSearchPipe]
 })
 export class BlocksComponent implements OnInit {
-  constructor(private blockService: BlockService) {}
-
   blockList: Block[];
+
+  constructor(private blockService: BlockService) { }
 
   ngOnInit() {
     this.getBlocks();
