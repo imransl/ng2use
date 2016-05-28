@@ -9,6 +9,7 @@ import { BlockService } from '../shared';
 })
 export class BlockDetailsComponent implements OnInit {
   @Input() block: Block;
+  
   details = {};
 
   constructor(private blockService: BlockService) {}
