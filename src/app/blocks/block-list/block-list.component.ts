@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, Inject, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BlockCategoryComponent } from '../block-category';
 import { Block } from '../shared';
 
@@ -12,8 +12,9 @@ declare var jQuery: any;
 })
 export class BlockListComponent {
   @Input() blocks: Block[];
-  @Input() searchTerm: string;
-  @Input() filterTerm: string;
 
-  constructor() {}
+  constructor() { }
+
+  ngOnInit() { }
+
 }
