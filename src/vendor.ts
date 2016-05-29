@@ -10,5 +10,4 @@ import '@angular/router';
 import 'rxjs';
 
 // styles
-import './assets/css/materialize.css';
 import './assets/css/style.css';
