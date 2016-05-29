@@ -85,9 +85,10 @@ nav .input-field {
 nav .input-field input {
   background-color: #2196F3;
   border: none;
-  color: #DDD;
-  font-size: 1.2rem;
-  padding-left: 4rem;
+  color: #FFF;
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+  text-align: center;
   transition: all .3s;
   width: 100%;
 }
@@ -120,7 +121,7 @@ nav .input-field label i {
 }
 
 nav .input-field input:focus + label i {
-  color: #333;
+  color: #0D47A1;
 }
 
 @media only screen and (min-width: 601px) {
