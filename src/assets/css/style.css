@@ -149,6 +149,16 @@ nav .input-field input:focus + label i {
   opacity: 1;
 }
 
+.no-result-message {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.87);
+  border-top: 1px dashed rgba(0, 0, 0, 0.87);
+  margin: 15px 0;
+}
+
+.no-result-message .row {
+  margin-bottom: 0;
+}
+
 
 /* FOOTER */
 
@@ -260,6 +270,8 @@ footer h2 {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* BROWSER VENDOR RELATED STYLING */
+
 ::-webkit-input-placeholder {
   color: #DDD;
 }
@@ -276,6 +288,14 @@ footer h2 {
 
 :-ms-input-placeholder {
   color: #DDD;
+}
+
+::-webkit-search-cancel-button {
+  z-index: -1;
+}
+
+::-ms-clear {
+  z-index: -1;
 }
 
 
