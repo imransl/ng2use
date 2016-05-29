@@ -1,5 +1,5 @@
 <div class="card" *ngIf="categoryBlocks.length > 0">
-  <div class="card-title">{{category}}</div>
+  <h2 class="card-title">{{category}}</h2>
 
   <ul class="card-content">
     <li class="accordion" *ngFor="let block of categoryBlocks" (click)="toggleBlockDetails(block)">
