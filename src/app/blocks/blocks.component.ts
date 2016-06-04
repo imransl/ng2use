@@ -11,9 +11,8 @@ import { BlockFilterPipe } from './shared';
 import { BlockSearchPipe } from './shared';
 
 @Component({
-  moduleId: module.id,
   selector: 'ngu-blocks',
-  template: require('./blocks.component.html'),
+  templateUrl: './blocks.component.html',
   directives: [BlockSearchComponent, BlockFilterComponent, BlockListComponent],
   providers: [BlockService],
   pipes: [BlockFilterPipe, BlockSearchPipe]

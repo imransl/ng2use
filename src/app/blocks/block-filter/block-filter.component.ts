@@ -1,17 +1,15 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { Block } from '../shared';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'ngu-block-filter',
-  template: require('./block-filter.component.html')
+  templateUrl: './block-filter.component.html'
 })
 export class BlockFilterComponent implements OnInit {
   @Output() update = new EventEmitter();
-  
+
   selectedFilter: string;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     this.update.emit('');
@@ -21,5 +19,5 @@ export class BlockFilterComponent implements OnInit {
   changeFilter(status: string) {
     this.selectedFilter = status;
     this.update.emit(status);
-  } 
+  }
 }

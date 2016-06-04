@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Block } from './block.model';
 
 @Pipe({
-    name: 'blockSearch'
+    name: 'nguBlockSearch'
 })
 export class BlockSearchPipe implements PipeTransform {
     transform(blocks: Block[], arg: string) {

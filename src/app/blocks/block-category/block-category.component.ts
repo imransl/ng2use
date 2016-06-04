@@ -3,12 +3,11 @@ import { Block } from '../shared';
 import { BlockDetailsComponent } from '../block-details';
 
 @Component({
-  moduleId: module.id,
   selector: 'ngu-block-category',
-  template: require('./block-category.component.html'),
+  templateUrl: './block-category.component.html',
   directives: [BlockDetailsComponent]
 })
-export class BlockCategoryComponent implements OnInit {
+export class BlockCategoryComponent implements OnInit, OnChanges {
   @Input() blocks: Block[];
   @Input() category: string;
 
@@ -19,10 +18,10 @@ export class BlockCategoryComponent implements OnInit {
   ngOnInit() {
     this.categoryBlocks = this.blocks.filter(block => block.category === this.category);
   }
-  
-  ngOnChanges(changes: {[propName: string]: SimpleChange}) {
-    const blocks: Block[] = changes['blocks'].currentValue;
-    this.categoryBlocks = blocks.filter(block => block.category === this.category);
+
+  ngOnChanges(changes: { [propName: string]: SimpleChange }) {
+    const filteredBlocks: Block[] = changes['blocks'].currentValue;
+    this.categoryBlocks = filteredBlocks.filter(block => block.category === this.category);
   }
 
   setBlockTitleClass(status: string) {
@@ -35,9 +34,10 @@ export class BlockCategoryComponent implements OnInit {
     };
   }
 
-  toggleBlockDetails(block: Block) {
-    // this.blocks.forEach(block => block['show'] = false);
-    // block.show = !block.show;
+  toggleBlockDetails(selectedBlock: Block) {
+    const show = !selectedBlock['show'];
+    this.categoryBlocks.forEach(block => block['show'] = false);
+    selectedBlock['show'] = show;
   }
 
 }
