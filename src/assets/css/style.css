@@ -3,10 +3,10 @@
 }
 
 html {
-  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.87);
   font-family: 'Roboto', Helvetica, Arial, 'Lucida Sans', sans-serif;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;  
 }
 
 @media only screen and (min-width: 0) {
@@ -47,6 +47,19 @@ ul {
 
 ul li {
   list-style: none;
+}
+
+aside {
+  padding-bottom: 1rem;
+}
+
+blockquote {
+  border-left: 5px solid #F44336;
+  clear: both;
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 0;
+  padding-left: 0.5rem;
 }
 
 
@@ -221,23 +234,26 @@ footer h2 {
   width: 2rem;
 }
 
-.character {
-  float: right;
-  margin: 20px;
-  width: 30%;
+.block-details-wrapper {
+  transition: all 1s;
 }
+
 
 .block-details {
   float: left;
-  margin: 20px 0;
   width: 60%;
 }
 
 .block-details p {
   border-bottom: 1px solid #DDD;
   line-height: 2;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 0 0 2rem;
+}
+
+.character {
+  float: right;
+  margin: 20px;
+  width: 30%;
 }
 
 
