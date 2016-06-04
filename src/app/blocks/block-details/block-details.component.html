@@ -1,12 +1,14 @@
-<section class="block-details">
-  <p *ngIf="details.description">{{details.description}}</p>
-  <p *ngIf="details.watchers">{{details.watchers}} people watching</p>
-  <p *ngIf="details.homepage">Homepage at <a [href]="details.homepage">{{details.homepage}}</a></p>
-  <p *ngIf="details.updated_at">Last update on {{details.updated_at}}</p>
-  <p *ngIf="details.html_url">GitHub repo is at <a [href]="details.html_url">{{details.html_url}}</a></p>
-</section>
+<div class="block-details-wrapper">
+  <section class="block-details">
+    <p *ngIf="details.description">{{details.description}}</p>
+    <p *ngIf="details.watchers">{{details.watchers}} people watching</p>
+    <p *ngIf="details.homepage">Homepage at <a [href]="details.homepage">{{details.homepage}}</a></p>
+    <p *ngIf="details.updated_at">Last update on {{details.updated_at}}</p>
+    <p *ngIf="details.html_url">GitHub repo is at <a [href]="details.html_url">{{details.html_url}}</a></p>
+  </section>
 
-<aside>
-  <img class="character" [src]="block.image" alt="{{block.character}}" width="50%">
-  <blockquote><strong>{{block.quote}}</strong></blockquote>
-</aside>
+  <aside>
+    <img class="character" [src]="block.image" alt="{{block.character}}" width="50%">
+    <blockquote>{{block.quote}}</blockquote>
+  </aside>
+</div>
