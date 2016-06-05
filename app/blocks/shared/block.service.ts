@@ -6,21 +6,22 @@ import { Block } from './block.model';
 
 @Injectable()
 export class BlockService {
-  private githubUrl = '//api.github.com/repos/';  
+  private githubUrl = '//api.github.com/repos/';
 
   constructor(private http: Http) { }
 
   getBlocks() {
     const url = 'app/blocks/shared/block-data.json';
+
     return this.http.get(url)
-                .map((res: Response) => res.json())
-                .cache()
-                .catch(this.handleError);
+      .map((res: Response) => res.json())
+      .cache()
+      .catch(this.handleError);
   }
-  
+
   getBlockDetails(repo: string): Observable<JSON> {
     const url = this.githubUrl + repo;
-    
+
     return this.http.get(url)
       .map((res: Response) => res.json())
       .cache()
