@@ -8,13 +8,14 @@ import { BlockService } from '../shared';
 })
 export class BlockDetailsComponent implements OnInit {
   @Input() block: Block;
+  characterImage: string;
 
   details = {};
 
   constructor(private blockService: BlockService) { }
 
   ngOnInit() {
-    this.block.character = 'assets/images/characters/' + this.block.character + '.svg';
+    this.characterImage = 'assets/images/characters/' + this.block.character + '.svg';
     this.getBlockDetails();
   }
 
