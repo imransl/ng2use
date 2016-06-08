@@ -5,8 +5,7 @@
 html {
   color: rgba(0, 0, 0, 0.87);
   font-family: 'Roboto', Helvetica, Arial, 'Lucida Sans', sans-serif;
-  font-weight: normal;
-  line-height: 1.5;  
+  line-height: 1.5;
 }
 
 @media only screen and (min-width: 0) {
@@ -80,24 +79,13 @@ nav {
   margin-top: 1rem;
 }
 
-nav .nav-wrapper {
-  overflow: hidden;
-  position: relative;
-}
-
 nav .nav-wrapper .search {
   height: 56px;
-}
-
-nav .input-field {
-  margin: 0;
-  position: relative;
 }
 
 nav .input-field input {
   background-color: #2196F3;
   border: none;
-  color: #FFF;
   font-size: 1.4rem;
   padding-left: 1.5rem;
   text-align: center;
@@ -129,7 +117,6 @@ nav .input-field label i {
   height: 56px;
   line-height: 56px;
   transition: color .3s;
-  /* vertical-align: bottom; */
 }
 
 nav .input-field input:focus + label i {
@@ -182,7 +169,7 @@ footer {
 }
 
 footer h2 {
-  border-bottom: 1px solid;
+  border-bottom: 1px dashed;
   line-height: 2;
   margin-top: 10px;
 }
@@ -192,21 +179,14 @@ footer h2 {
 
 .card {
   border: 1px solid #CCC;
-  position: relative;
   margin: 0.5rem 0 1rem 0;
-  background-color: #fff;
-  transition: box-shadow .25s;
   border-radius: 2px;
 }
 
 .card-title {
-  background-color: inherit;
   border-bottom: 1px solid #CCC;
-  font-weight: 300;
   padding: 10px 20px;
-  position: relative;
   text-transform: uppercase;
-  z-index: 2;
 }
 
 .card-content {
@@ -218,20 +198,17 @@ footer h2 {
 }
 
 .accordion-header {
-  border-bottom: 1px solid #DDD;
+   border-bottom: 1px solid #DDD; 
   cursor: pointer;
   line-height: 3rem;
-  min-height: 3rem;
   padding: 0 1rem;
 }
 
 .accordion-header i {
   float: left;
   font-size: 1.6rem;
-  line-height: 3rem;
   margin-right: 1rem;
   text-align: center;
-  width: 2rem;
 }
 
 .block-details-wrapper {
@@ -247,7 +224,7 @@ footer h2 {
 .block-details p {
   border-bottom: 1px solid #DDD;
   line-height: 2;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1.5rem;
 }
 
 .character {
