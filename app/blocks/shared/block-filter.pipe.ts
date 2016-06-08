@@ -5,7 +5,7 @@ import { Block } from './block.model';
     name: 'nguBlockFilter'
 })
 export class BlockFilterPipe implements PipeTransform {
-    transform(blocks: Block[], arg: string) {
+    transform(blocks: Block[], arg: string): Block[] {
         if (arg) {
             return blocks.filter(block => block.status === arg);
         } else {

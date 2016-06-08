@@ -11,5 +11,4 @@ import { BlocksComponent } from './blocks';
   directives: [HeaderComponent, FooterComponent, BlocksComponent],
   providers: [HTTP_PROVIDERS]
 })
-export class Ng2useAppComponent {
-}
+export class Ng2useAppComponent { }

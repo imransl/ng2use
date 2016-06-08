@@ -29,7 +29,6 @@
     "codelyzer": "0.0.19",
     "concurrently": "^2.1.0",
     "http-server": "^0.9.0",
-    "systemjs-plugin-json": "^0.1.0",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
   }

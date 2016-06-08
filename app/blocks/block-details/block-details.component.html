@@ -1,4 +1,4 @@
-<div class="block-details-wrapper">
+<div class="block-details-wrapper" *ngIf="details">
   <section class="block-details">
     <p *ngIf="details.description">{{details.description}}</p>
     <p *ngIf="details.watchers">{{details.watchers}} people watching</p>

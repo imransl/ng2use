@@ -8,9 +8,9 @@ import { BlockService } from '../shared';
 })
 export class BlockDetailsComponent implements OnInit {
   @Input() block: Block;
-  characterImage: string;
 
-  details = {};
+  characterImage: string;
+  details: Object;
 
   constructor(private blockService: BlockService) { }
 

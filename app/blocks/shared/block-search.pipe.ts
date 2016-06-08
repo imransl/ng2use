@@ -5,7 +5,7 @@ import { Block } from './block.model';
     name: 'nguBlockSearch'
 })
 export class BlockSearchPipe implements PipeTransform {
-    transform(blocks: Block[], arg: string) {
+    transform(blocks: Block[], arg: string): Block[] {
         if (arg) {
             return blocks.filter(block => block.name.toLowerCase().indexOf(arg.toLowerCase()) > -1);
         } else {
