@@ -1,0 +1,17 @@
+<section class="section" *ngIf="blocks?.length > 0">
+    <div class="container cards-container">
+        <ngu-block-category 
+            class="card-wrapper" 
+            *ngFor="let category of categories" 
+            [blocks]="blocks" 
+            [category]="category"></ngu-block-category>
+    </div>
+</section>
+
+<section class="section no-result-message" *ngIf="!blocks?.length">
+    <div class="container">
+        <div class="row">
+            <h2 class="col s12">No related modules&hellip; Is the force with you?</h2>
+        </div>
+    </div>
+</section>
