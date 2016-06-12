@@ -203,21 +203,18 @@ footer h2 {
 }
 
 .card {
-  border: 1px solid #CCC;
+  border: 1px solid #FFF;
+  padding: 0 0.75rem;
 }
 
 .card-title {
   border-bottom: 1px solid #CCC;
-  padding: 10px 20px;
+  padding: 5px 0;
   text-transform: uppercase;
 }
 
 .card-content {
   padding: 5px 0;
-}
-
-.accordion {
-  margin: 0 20px;
 }
 
 .accordion-header {
@@ -396,7 +393,7 @@ footer h2 {
 
 .col {
   float: left;
-  padding: 0 0.75rem;
+  padding: 0 20px;
 }
 
 .s1 {
