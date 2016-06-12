@@ -3,7 +3,11 @@
 
   <ul class="card-content">
     <li class="accordion" *ngFor="let block of categoryBlocks" (click)="toggleBlockDetails(block)">
-      <div class="accordion-header white-text" [ngClass]="setBlockTitleClass(block.status)">{{block.name}}<i class="icon icon-plus"></i></div>
+      <div class="accordion-header white-text" [ngClass]="setBlockTitleClass(block.status)">
+        {{block.name}}
+        <i *ngIf="!block.show" class="icon icon-plus"></i>
+        <i *ngIf="block.show" class="icon icon-minus"></i>
+      </div>
       <div class="accordion-body">
         <ngu-block-details *ngIf="block.show" [block]="block"></ngu-block-details>
       </div>
