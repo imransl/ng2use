@@ -9,9 +9,12 @@ import { Block } from '../shared';
 })
 export class BlockListComponent implements OnInit {
   @Input() blocks: Block[];
+  categories: string[];
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.categories = ['official', 'ui', 'helpers', 'starters', 'ngrx', 'education'];
+  }
 
 }

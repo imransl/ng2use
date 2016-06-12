@@ -1,29 +1,10 @@
 <section class="section" *ngIf="blocks?.length > 0">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m12 l6 item">
-                <ngu-block-category [blocks]="blocks" [category]="'official'"></ngu-block-category>
-            </div>
-            <div class="col s12 m12 l6 item">
-                <ngu-block-category [blocks]="blocks" [category]="'starters'"></ngu-block-category>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 m12 l6 item">
-                <ngu-block-category [blocks]="blocks" [category]="'ngrx'"></ngu-block-category>
-            </div>
-            <div class="col s12 m12 l6 item">
-                <ngu-block-category [blocks]="blocks" [category]="'ui'"></ngu-block-category>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 m12 l6 item">
-                <ngu-block-category [blocks]="blocks" [category]="'helpers'"></ngu-block-category>
-            </div>
-            <div class="col s12 m12 l6 item">
-                <ngu-block-category [blocks]="blocks" [category]="'education'"></ngu-block-category>
-            </div>
-        </div>
+    <div class="container cards-container">
+        <ngu-block-category 
+            class="card-wrapper" 
+            *ngFor="let category of categories" 
+            [blocks]="blocks" 
+            [category]="category"></ngu-block-category>
     </div>
 </section>
 
