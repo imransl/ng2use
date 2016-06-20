@@ -165,13 +165,19 @@ nav .input-field input:focus + label i {
 /* FOOTER */
 
 footer {
+  bottom: 0;
   padding: 10px 0 10px 0;
+  width: 100%;
 }
 
 footer h2 {
   border-bottom: 1px dashed;
   line-height: 2;
   margin-top: 10px;
+}
+
+small {
+  font-size: 1rem;
 }
 
 
@@ -261,6 +267,10 @@ footer h2 {
 
 .center {
   text-align: center;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .input-field {
