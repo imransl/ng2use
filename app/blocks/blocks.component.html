@@ -1,10 +1,6 @@
-<section class="section top-banner" id="index-banner">
-    <div class="container">
-        <div class="row center">
-            <ngu-block-search (update)="searchTerm = $event"></ngu-block-search>
-        </div>
-        <ngu-block-filter (update)="filterTerm = $event"></ngu-block-filter>
-    </div>
+<section class="top-banner">
+    <ngu-block-search (update)="searchTerm = $event"></ngu-block-search>
+    <ngu-block-filter (update)="filterTerm = $event"></ngu-block-filter>
 </section>
 
 <ngu-block-list [blocks]="blockList$ | async | nguBlockSearch: searchTerm | nguBlockFilter: filterTerm"></ngu-block-list>

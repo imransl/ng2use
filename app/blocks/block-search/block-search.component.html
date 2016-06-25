@@ -1,9 +1,5 @@
-<nav class="col s12 m8 l6">
-  <div class="nav-wrapper">
-    <div class="input-field blue">     
-      <!-- block-search ID is added to make the label clicakble -->
-      <input #searchTerm type="search" class="search" id="block-search" placeholder="What Angular 2 to use?" (keyup)="update.emit(searchTerm.value)">
-      <label for="block-search"><i class="icon icon-search"></i></label>
-    </div>
-  </div>
-</nav>
+<form role="search" class="blue">
+  <!-- block-search ID is added to make the label clicakble -->
+  <input #searchTerm type="search" class="search" id="block-search" placeholder="What Angular 2 to use?" (keyup)="update.emit(searchTerm.value)">
+  <label for="block-search"><i class="icon icon-search"></i></label>
+</form>

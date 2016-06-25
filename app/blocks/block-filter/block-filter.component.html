@@ -1,11 +1,7 @@
-<section class="section section-filter">
-  <div class="container">
-      <div class="row center white-text">
-        <a class="btn grey" [class.selected-filter]="selectedFilter === ''" (click)="changeFilter('')">All</a>
-        <a class="btn green"[class.selected-filter]="selectedFilter === 'stable'"(click)="changeFilter('stable')">Stable</a>
-        <a class="btn blue darken-2" [class.selected-filter]="selectedFilter === 'rc'" (click)="changeFilter('rc')">RC</a>
-        <a class="btn orange" [class.selected-filter]="selectedFilter === 'beta'" (click)="changeFilter('beta')">Beta</a>
-        <a class="btn red" [class.selected-filter]="selectedFilter === 'alpha'" (click)="changeFilter('alpha')">Alpha</a>
-      </div>
-  </div>
+<section class="filter center white-text">
+  <a class="grey" [class.selected-filter]="selectedFilter === ''" (click)="changeFilter('')">All</a>
+  <a class="green" [class.selected-filter]="selectedFilter === 'stable'" (click)="changeFilter('stable')">Stable</a>
+  <a class="blue" [class.selected-filter]="selectedFilter === 'rc'" (click)="changeFilter('rc')">RC</a>
+  <a class="orange" [class.selected-filter]="selectedFilter === 'beta'" (click)="changeFilter('beta')">Beta</a>
+  <a class="red" [class.selected-filter]="selectedFilter === 'alpha'" (click)="changeFilter('alpha')">Alpha</a>
 </section>
