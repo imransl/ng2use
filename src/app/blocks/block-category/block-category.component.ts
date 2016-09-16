@@ -1,11 +1,12 @@
 import { Component, Input, OnInit, OnChanges, SimpleChange } from '@angular/core';
+import { NgIf, NgFor } from '@angular/common';
 import { Block } from '../shared';
 import { BlockDetailsComponent } from '../block-details';
 
 @Component({
   selector: 'ngu-block-category',
   templateUrl: 'app/blocks/block-category/block-category.component.html',
-  directives: [BlockDetailsComponent]
+  directives: [NgIf, NgFor, BlockDetailsComponent]
 })
 export class BlockCategoryComponent implements OnInit, OnChanges {
   @Input() blocks: Block[];
