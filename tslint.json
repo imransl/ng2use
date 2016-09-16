@@ -93,6 +93,8 @@
       "check-type"
     ],
 
+    "directive-selector-prefix": [true, "app"],
+    "component-selector-prefix": [true, "app"],
     "directive-selector-name": [true, "camelCase"],
     "component-selector-name": [true, "kebab-case"],
     "directive-selector-type": [true, "attribute"],
@@ -105,9 +107,6 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true,
-    "directive-selector-prefix": [true, "ngu"],
-    "component-selector-prefix": [true, "ngu"],
-    "pipe-naming": [true, "camelCase", "ngu"]
+    "directive-class-suffix": true
   }
 }
