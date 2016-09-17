@@ -1,4 +1,4 @@
-export class Block {
+export interface Block {
     id: number;
     name: string;
     repo: string;
@@ -6,4 +6,5 @@ export class Block {
     status: string;
     character: string;
     quote: string;
+    show?: boolean;
 }

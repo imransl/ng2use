@@ -7,14 +7,12 @@ import { BlocksModule } from './blocks';
 import { Ng2useAppComponent } from './ng2use.component';
 import { HeaderComponent } from './shared/header';
 import { FooterComponent } from './shared/footer';
-import { BlocksComponent } from './blocks';
 
 @NgModule({
   declarations: [
     Ng2useAppComponent,
     HeaderComponent,
-    FooterComponent,
-    BlocksComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,

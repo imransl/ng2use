@@ -2,7 +2,7 @@ import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ngu-block-filter',
-  templateUrl: 'app/blocks/block-filter/block-filter.component.html'
+  templateUrl: './block-filter.component.html'
 })
 export class BlockFilterComponent implements OnInit {
   @Output() update = new EventEmitter();

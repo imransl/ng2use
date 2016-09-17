@@ -6,7 +6,7 @@ import { BlockService } from './shared';
 
 @Component({
   selector: 'ngu-blocks',
-  templateUrl: 'app/blocks/blocks.component.html'
+  templateUrl: './blocks.component.html'
 })
 export class BlocksComponent implements OnInit {
   blockList$: Observable<Block[]>;

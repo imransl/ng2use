@@ -1,12 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NgIf, NgFor } from '@angular/common';
-import { BlockCategoryComponent } from '../block-category';
 import { Block } from '../shared';
 
 @Component({
   selector: 'ngu-block-list',
-  templateUrl: 'app/blocks/block-list/block-list.component.html',
-  directives: [NgIf, NgFor, BlockCategoryComponent]
+  templateUrl: './block-list.component.html'
 })
 export class BlockListComponent implements OnInit {
   @Input() blocks: Block[];

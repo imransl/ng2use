@@ -1,12 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NgIf } from '@angular/common';
 import { Block } from '../shared';
 import { BlockService } from '../shared';
 
 @Component({
   selector: 'ngu-block-details',
-  templateUrl: 'app/blocks/block-details/block-details.component.html',
-  directives: [NgIf]
+  templateUrl: './block-details.component.html'
 })
 export class BlockDetailsComponent implements OnInit {
   @Input() block: Block;
