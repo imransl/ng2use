@@ -49,6 +49,7 @@ ul li {
 }
 
 aside {
+  clear: both;
   padding-bottom: 1rem;
 }
 
@@ -330,6 +331,10 @@ small {
   font-size: 1.6rem;
   margin-right: 1rem;
   text-align: center;
+}
+
+.accordion-body {
+  clear: both;
 }
 
 .block-details-wrapper {
