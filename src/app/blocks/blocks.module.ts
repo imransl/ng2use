@@ -28,6 +28,9 @@ import { BlockService } from './shared';
   imports: [
     CommonModule
   ],
+  exports: [
+    BlocksComponent
+  ],
   providers: [
     BlockService
   ]

@@ -14,7 +14,7 @@ export class BlockService {
     const url = 'app/blocks/shared/block-data.json';
 
     return this.http.get(url)
-      .map((res: Response) => res.json().data as Block[])
+      .map((res: Response) => res.json())
       .cache()
       .catch(this.handleError);
   }
