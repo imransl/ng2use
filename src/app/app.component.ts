@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngu-app',
-  templateUrl: './ng2use.component.html'
+  templateUrl: './app.component.html'
 })
-export class Ng2useAppComponent { }
+export class AppComponent { }

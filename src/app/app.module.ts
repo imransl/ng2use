@@ -4,13 +4,13 @@ import { HttpModule } from '@angular/http';
 
 import { BlocksModule } from './blocks';
 
-import { Ng2useAppComponent } from './ng2use.component';
+import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header';
 import { FooterComponent } from './shared/footer';
 
 @NgModule({
   declarations: [
-    Ng2useAppComponent,
+    AppComponent,
     HeaderComponent,
     FooterComponent
   ],
@@ -20,6 +20,6 @@ import { FooterComponent } from './shared/footer';
     BlocksModule
   ],
   providers: [],
-  bootstrap: [Ng2useAppComponent]
+  bootstrap: [AppComponent]
 })
-export class Ng2useAppModule { }
+export class AppModule { }

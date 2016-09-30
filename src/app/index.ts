@@ -1,2 +1,2 @@
-export * from './ng2use.component';
-export * from './ng2use.module';
+export * from './app.module';
+export * from './app.component';
