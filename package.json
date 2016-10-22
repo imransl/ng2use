@@ -7,6 +7,8 @@
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
+    "predeploy": "ng build --aot --prod",
+    "deploy": "surge -p dist -d bright-fear.surge.sh",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor"
   },
@@ -38,6 +40,7 @@
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
     "protractor": "4.0.9",
+    "surge": "^0.18.0",
     "ts-node": "1.2.1",
     "tslint": "3.13.0",
     "typescript": "~2.0.3"
