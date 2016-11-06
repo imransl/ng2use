@@ -11,4 +11,8 @@ export class BlockSearchComponent implements OnInit {
 
   ngOnInit() { }
 
+  submitForm(event) {
+    event.preventDefault();
+  }
+
 }
