@@ -9,7 +9,7 @@ import { Block } from './block.model';
 
 @Injectable()
 export class BlockService {
-  private githubUrl = '//api.github.com/repos/';
+  private githubUrl = 'https://api.github.com/repos/';
 
   constructor(private http: Http) { }
 
