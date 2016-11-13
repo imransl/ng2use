@@ -1,10 +1,11 @@
-<div class="block-details-wrapper" *ngIf="details">
+<div class="block-details-wrapper" *ngIf="block">
   <section class="block-details">
-    <p *ngIf="details.description">{{details.description}}</p>
-    <p *ngIf="details.watchers">{{details.watchers}} people watching</p>
-    <p *ngIf="details.homepage">Homepage at <a [href]="details.homepage">{{details.homepage}}</a></p>
-    <p *ngIf="details.updated_at">Last update on {{details.updated_at}}</p>
-    <p *ngIf="details.html_url">GitHub repo is at <a [href]="details.html_url">{{details.html_url}}</a></p>
+    <p *ngIf="block.description">{{block.description}}</p>
+    <p *ngIf="block.username">Repo owned by {{block.username}} <img class="avatar" [src]="block.avatar" height="20" alt="" /></p>
+    <p *ngIf="block.watchers">{{block.watchers}} people watching</p>
+    <p *ngIf="block.homepage">Homepage at <a [href]="block.homepage">{{block.homepage}}</a></p>
+    <p *ngIf="block.lastUpdate">Last update on {{block.lastUpdate}}</p>
+    <p *ngIf="block.repoUrl">GitHub repo is at <a [href]="block.repoUrl">{{block.repoUrl}}</a></p>
   </section>
 
   <aside>

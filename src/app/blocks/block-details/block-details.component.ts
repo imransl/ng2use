@@ -10,7 +10,6 @@ export class BlockDetailsComponent implements OnInit {
   @Input() block: Block;
 
   characterImage: string;
-  details: Object;
 
   constructor(private blockService: BlockService) { }
 
@@ -22,8 +21,17 @@ export class BlockDetailsComponent implements OnInit {
   getBlockDetails() {
     this.blockService.getBlockDetails(this.block.repo)
       .subscribe(details => {
-        details['updated_at'] = new Date(details['updated_at']);
-        this.details = details;
+        let remoteDetails = {
+          description: details.description,
+          username: details.owner.login,
+          avatar: details.owner.avatar_url,
+          watchers: details.watchers,
+          homepage: details.homepage,
+          lastUpdate: new Date(details.updated_at).toUTCString(),
+          repoUrl: details.html_url
+        };
+
+        Object.assign(this.block, remoteDetails);
       });
   }
 

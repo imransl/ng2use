@@ -1,30 +1,23 @@
 [
     {
-        "id": 1,
-        "name": "Angular 2",
-        "repo": "angular/angular",
-        "category": "official",
-        "status": "rc",
-        "character": "darth-vader",
-        "quote": "I find your lack of faith disturbing"
-    },
-    {
         "id": 2,
         "name": "Angular Universal",
         "repo": "angular/universal",
         "category": "official",
-        "status": "rc",
+        "status": "stable",
         "character": "millenium-falcon",
-        "quote": "Impressive. Most Impressive. You have been taught well."
+        "quote": "Impressive. Most Impressive. You have been taught well.",
+        "version": "2.0.0"
     },
     {
         "id": 3,
         "name": "Angular 2 Seed",
         "repo": "angular/angular2-seed",
         "category": "official",
-        "status": "rc",
+        "status": "stable",
         "character": "lightsaber-green",
-        "quote": "I've been waiting for you. We meet again at last."
+        "quote": "I've been waiting for you. We meet again at last.",
+        "version": "2.0.0"
     },
     {
         "id": 4,
@@ -33,7 +26,8 @@
         "category": "official",
         "status": "beta",
         "character": "lightsaber-red",
-        "quote": "Ready are you? What know of you ready?"
+        "quote": "Ready are you? What know of you ready?",
+        "version": "2.1.0"
     },
     {
         "id": 5,
@@ -42,7 +36,8 @@
         "category": "official",
         "status": "beta",
         "character": "leia",
-        "quote": "I am not a committee!"
+        "quote": "I am not a committee!",
+        "version": "2.1.0"
     },
     {
         "id": 6,
@@ -51,7 +46,8 @@
         "category": "official",
         "status": "alpha",
         "character": "c3po",
-        "quote": "Aren't you a little short for Angular?"
+        "quote": "Aren't you a little short for Angular?",
+        "version": "2.0.0"
     },
     {
         "id": 7,
@@ -60,43 +56,38 @@
         "category": "official",
         "status": "rc",
         "character": "stormtrooper",
-        "quote": "We would be honored if you would join us"
+        "quote": "We would be honored if you would join us",
+        "version": "2.0.0"
     },
     {
         "id": 8,
         "name": "State Management",
         "repo": "ngrx/store",
         "category": "ngrx",
-        "status": "rc",
+        "status": "stable",
         "character": "chewbacca",
-        "quote": "I am a Jedi as my father was before me"
+        "quote": "I am a Jedi as my father was before me",
+        "version": "2.0.0"
     },
     {
         "id": 9,
-        "name": "Reactive Router",
-        "repo": "ngrx/router",
+        "name": "ngrx router store",
+        "repo": "ngrx/router-store",
         "category": "ngrx",
-        "status": "beta",
+        "status": "stable",
         "character": "r2d2",
-        "quote": "That little droid is going to cause me a lot of trouble"
+        "quote": "That little droid is going to cause me a lot of trouble",
+        "version": "2.1.0"
     },
     {
         "id": 10,
         "name": "Reactive Dev Tools",
-        "repo": "ngrx/devtools",
+        "repo": "ngrx/store-devtools",
         "category": "ngrx",
-        "status": "rc",
+        "status": "stable",
         "character": "death-star",
-        "quote": "The circle is now complete"
-    },
-    {
-        "id": 11,
-        "name": "RxJS Powered IndexedDB",
-        "repo": "ngrx/db",
-        "category": "ngrx",
-        "status": "alpha",
-        "character": "boba-fett",
-        "quote": "I'm not sure what it is about them but they're trouble"
+        "quote": "The circle is now complete",
+        "version": "2.1.0"
     },
     {
         "id": 12,
@@ -105,16 +96,18 @@
         "category": "helpers",
         "status": "beta",
         "character": "lightsaber-green",
-        "quote": "I ain't in this for your revolution"
+        "quote": "I ain't in this for your revolution",
+        "version": "2.1.2"
     },
     {
         "id": 13,
         "name": "NG2 Bootstrap",
         "repo": "valor-software/ng2-bootstrap",
         "category": "ui",
-        "status": "rc",
+        "status": "stable",
         "character": "chewbacca",
-        "quote": "Laugh it up, fuzzball!"
+        "quote": "Laugh it up, fuzzball!",
+        "version": "2.1.0"
     },
     {
         "id": 14,
@@ -123,7 +116,8 @@
         "category": "starters",
         "status": "rc",
         "character": "leia",
-        "quote": "All right, I'll give it a try."
+        "quote": "All right, I'll give it a try.",
+        "version": "2.1.2"
     },
     {
         "id": 15,
@@ -132,7 +126,8 @@
         "category": "starters",
         "status": "rc",
         "character": "lightsaber-green",
-        "quote": "I won't fail you. I'm not afraid."
+        "quote": "I won't fail you. I'm not afraid.",
+        "version": "2.1.1"
     },
     {
         "id": 16,
@@ -141,7 +136,8 @@
         "category": "starters",
         "status": "rc",
         "character": "death-star",
-        "quote": "I don't, I don't believe it."
+        "quote": "I don't, I don't believe it.",
+        "version": "2.1.2"
     },
     {
         "id": 17,
@@ -150,7 +146,8 @@
         "category": "starters",
         "status": "rc",
         "character": "c3po",
-        "quote": "You will be. You... will... be."
+        "quote": "You will be. You... will... be.",
+        "version": "2.1.0"
     },
     {
         "id": 18,
@@ -159,7 +156,8 @@
         "category": "starters",
         "status": "rc",
         "character": "stormtrooper",
-        "quote": "There is no escape. Don't make me destroy you."
+        "quote": "There is no escape. Don't make me destroy you.",
+        "version": "2.1.0"
     },
     {
         "id": 19,
@@ -168,7 +166,8 @@
         "category": "starters",
         "status": "rc",
         "character": "darth-vader",
-        "quote": "If you only knew the power of the Dark Side"
+        "quote": "If you only knew the power of the Dark Side",
+        "version": "2.0.0"
     },
     {
         "id": 20,
@@ -177,16 +176,8 @@
         "category": "helpers",
         "status": "rc",
         "character": "r2d2",
-        "quote": "Search your feelings, you know it to be true!"
-    },
-    {
-        "id": 21,
-        "name": "Angular 2 Community FAQ",
-        "repo": "escardin/angular2-community-faq",
-        "category": "education",
-        "status": "stable",
-        "character": "leia",
-        "quote": "You will take me to Angular now."
+        "quote": "Search your feelings, you know it to be true!",
+        "version": "2.0.0"
     },
     {
         "id": 22,
@@ -195,7 +186,8 @@
         "category": "education",
         "status": "stable",
         "character": "lightsaber-green",
-        "quote": "Never tell me the odds!"
+        "quote": "Never tell me the odds!",
+        "version": "2.1.0"
     },
     {
         "id": 23,
@@ -204,16 +196,8 @@
         "category": "ui",
         "status": "beta",
         "character": "millenium-falcon",
-        "quote": "You’ve never heard of the Millennium Falcon?"
-    },
-    {
-        "id": 24,
-        "name": "Fuel UI",
-        "repo": "FuelInteractive/fuel-ui",
-        "category": "ui",
-        "status": "rc",
-        "character": "boba-fett",
-        "quote": "I'll not leave you here. I've got to save you."
+        "quote": "You’ve never heard of the Millennium Falcon?",
+        "version": "2.0.1"
     },
     {
         "id": 25,
@@ -222,6 +206,7 @@
         "category": "ui",
         "status": "rc",
         "character": "stormtrooper",
-        "quote": "You already have, Angular."
+        "quote": "You already have, Angular.",
+        "version": "2.1.0"
     }
 ]
