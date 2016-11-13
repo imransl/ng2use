@@ -3,6 +3,7 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs';
 
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/cache';
 
 import { Block } from './block.model';
@@ -18,22 +19,33 @@ export class BlockService {
 
     return this.http.get(url)
       .map((res: Response) => res.json())
+      .catch(this.handleError)
       .cache();
   }
 
-  getBlockDetails(repo: string): Observable<JSON> {
+  getBlockDetails(repo: string) {
     const url = this.githubUrl + repo;
 
     return this.http.get(url)
       .map((res: Response) => res.json())
+      .catch(this.handleError)
       .cache();
   }
 
-  // handleError(error: any) {
-  //   let errorMsg = error.message;
+  private handleError(error: Response | any) {
+    // gotta upload these error messages to some logging service to keep track
+    let errMsg: string;
 
-  //   console.error(errorMsg);
-  //   return Observable.throw(errorMsg);
-  // }
+    if (error instanceof Response) {
+      const body = error.json() || '';
+      const err = body.error || JSON.stringify(body);
+      errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
+    } else {
+      errMsg = error.message ? error.message : error.toString();
+    }
+
+    console.error(errMsg);
+    return Observable.throw(errMsg);
+  }
 
 }
