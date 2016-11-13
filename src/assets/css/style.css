@@ -49,7 +49,6 @@ ul li {
 }
 
 aside {
-  clear: both;
   padding-bottom: 1rem;
 }
 
@@ -177,13 +176,21 @@ header img {
 .top-banner {
   background-color: #0D47A1;
   padding: 1rem 0;
+  padding-bottom: calc(1rem - 5px);
 }
 
 [role=search] {
-  position: relative;
-  margin: 0 auto 1rem auto;
-  max-width: 508px;
-  width: 90%;
+  display: none;
+}
+
+@media only screen and (min-width: 993px) {
+  [role=search] {
+    display: block;
+    position: relative;
+    margin: 0 auto 1rem auto;
+    max-width: 508px;
+    width: 90%;
+  }
 }
 
 [role=search] label {
@@ -208,7 +215,7 @@ header img {
   background-color: #2196F3;
   border: none;
   font-size: 1.4rem;
-  height: 56px;  
+  height: 56px;
   padding-left: 1.5rem;
   text-align: center;
   transition: all .3s;
@@ -259,10 +266,16 @@ header img {
 
 /* FOOTER */
 
-footer {
-  bottom: 0;
-  padding: 10px 0 10px 0;
+ngu-footer {
+  display: block;
   width: 100%;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 1rem 0;
+  width: 90%;
 }
 
 footer h2 {
@@ -333,6 +346,15 @@ small {
   text-align: center;
 }
 
+.version {
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #dedede;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
 .accordion-body {
   clear: both;
 }
@@ -350,6 +372,12 @@ small {
   border-bottom: 1px solid #DDD;
   line-height: 2;
   padding: 0 0 0 1.5rem;
+}
+
+.avatar {
+  left: 3px;
+  position: relative;
+  top: 5px;
 }
 
 .character {
