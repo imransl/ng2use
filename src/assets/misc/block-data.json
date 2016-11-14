@@ -1,6 +1,6 @@
 [
     {
-        "id": 2,
+        "id": 1,
         "name": "Angular Universal",
         "repo": "angular/universal",
         "category": "official",
@@ -10,7 +10,7 @@
         "version": "2.0.0"
     },
     {
-        "id": 3,
+        "id": 2,
         "name": "Angular 2 Seed",
         "repo": "angular/angular2-seed",
         "category": "official",
@@ -20,7 +20,7 @@
         "version": "2.0.0"
     },
     {
-        "id": 4,
+        "id": 3,
         "name": "Angular 2 Firebase",
         "repo": "angular/angularfire2",
         "category": "official",
@@ -30,7 +30,7 @@
         "version": "2.1.0"
     },
     {
-        "id": 5,
+        "id": 4,
         "name": "Angular CLI",
         "repo": "angular/angular-cli",
         "category": "official",
@@ -40,7 +40,7 @@
         "version": "2.1.0"
     },
     {
-        "id": 6,
+        "id": 5,
         "name": "Angular Material 2",
         "repo": "angular/material2",
         "category": "official",
@@ -50,7 +50,7 @@
         "version": "2.0.0"
     },
     {
-        "id": 7,
+        "id": 6,
         "name": "Angular Mobile Toolkit",
         "repo": "angular/mobile-toolkit",
         "category": "official",
@@ -60,7 +60,7 @@
         "version": "2.0.0"
     },
     {
-        "id": 8,
+        "id": 7,
         "name": "State Management",
         "repo": "ngrx/store",
         "category": "ngrx",
@@ -70,17 +70,17 @@
         "version": "2.0.0"
     },
     {
-        "id": 9,
-        "name": "ngrx router store",
+        "id": 8,
+        "name": "Router Store",
         "repo": "ngrx/router-store",
         "category": "ngrx",
         "status": "stable",
         "character": "r2d2",
         "quote": "That little droid is going to cause me a lot of trouble",
-        "version": "2.1.0"
+        "version": "2.0.0"
     },
     {
-        "id": 10,
+        "id": 9,
         "name": "Reactive Dev Tools",
         "repo": "ngrx/store-devtools",
         "category": "ngrx",
@@ -90,87 +90,77 @@
         "version": "2.1.0"
     },
     {
-        "id": 12,
-        "name": "NG2 Translate",
-        "repo": "ocombe/ng2-translate",
-        "category": "helpers",
-        "status": "beta",
-        "character": "lightsaber-green",
-        "quote": "I ain't in this for your revolution",
-        "version": "2.1.2"
-    },
-    {
-        "id": 13,
-        "name": "NG2 Bootstrap",
-        "repo": "valor-software/ng2-bootstrap",
-        "category": "ui",
-        "status": "stable",
-        "character": "chewbacca",
-        "quote": "Laugh it up, fuzzball!",
-        "version": "2.1.0"
-    },
-    {
-        "id": 14,
+        "id": 10,
         "name": "Angular 2 Jump Start",
         "repo": "DanWahlin/Angular2-JumpStart",
         "category": "starters",
-        "status": "rc",
+        "status": "stable",
         "character": "leia",
         "quote": "All right, I'll give it a try.",
         "version": "2.1.2"
     },
     {
-        "id": 15,
+        "id": 11,
         "name": "Angular 2 Webpack Starter",
         "repo": "AngularClass/angular2-webpack-starter",
         "category": "starters",
-        "status": "rc",
+        "status": "stable",
         "character": "lightsaber-green",
         "quote": "I won't fail you. I'm not afraid.",
         "version": "2.1.1"
     },
     {
-        "id": 16,
+        "id": 12,
         "name": "Angular 2 ESNext Starter",
         "repo": "blacksonic/angular2-esnext-starter",
         "category": "starters",
-        "status": "rc",
+        "status": "stable",
         "character": "death-star",
         "quote": "I don't, I don't believe it.",
         "version": "2.1.2"
     },
     {
-        "id": 17,
+        "id": 13,
         "name": "Angular 2 Login Seed",
         "repo": "domfarolino/angular2-login-seed",
         "category": "starters",
-        "status": "rc",
+        "status": "stable",
         "character": "c3po",
         "quote": "You will be. You... will... be.",
         "version": "2.1.0"
     },
     {
-        "id": 18,
+        "id": 14,
         "name": "Angular 2 Base",
         "repo": "kiswa/angular2-base",
         "category": "starters",
-        "status": "rc",
+        "status": "stable",
         "character": "stormtrooper",
         "quote": "There is no escape. Don't make me destroy you.",
         "version": "2.1.0"
     },
     {
-        "id": 19,
+        "id": 15,
         "name": "Angular 2 TypeScript and Gulp",
         "repo": "kolorobot/angular2-typescript-gulp",
         "category": "starters",
-        "status": "rc",
+        "status": "stable",
         "character": "darth-vader",
         "quote": "If you only knew the power of the Dark Side",
         "version": "2.0.0"
     },
     {
-        "id": 20,
+        "id": 16,
+        "name": "NG2 Translate",
+        "repo": "ocombe/ng2-translate",
+        "category": "helpers",
+        "status": "rc",
+        "character": "lightsaber-green",
+        "quote": "I ain't in this for your revolution",
+        "version": "2.1.2"
+    },
+    {
+        "id": 17,
         "name": "Angular 2 JWT",
         "repo": "auth0/angular2-jwt",
         "category": "helpers",
@@ -180,33 +170,43 @@
         "version": "2.0.0"
     },
     {
-        "id": 22,
-        "name": "Angular 2 Education",
-        "repo": "timjacobi/angular2-education",
-        "category": "education",
-        "status": "stable",
-        "character": "lightsaber-green",
-        "quote": "Never tell me the odds!",
-        "version": "2.1.0"
+        "id": 18,
+        "name": "NG2 Bootstrap",
+        "repo": "valor-software/ng2-bootstrap",
+        "category": "ui",
+        "status": "rc",
+        "character": "chewbacca",
+        "quote": "Laugh it up, fuzzball!",
+        "version": "2.0.0-rc.6"
     },
     {
-        "id": 23,
+        "id": 19,
         "name": "Angular2 & Semantic UI",
         "repo": "vladotesanovic/ngSemantic",
         "category": "ui",
-        "status": "beta",
+        "status": "rc",
         "character": "millenium-falcon",
         "quote": "You’ve never heard of the Millennium Falcon?",
         "version": "2.0.1"
     },
     {
-        "id": 25,
+        "id": 20,
         "name": "PrimeNG",
         "repo": "primefaces/primeng",
         "category": "ui",
         "status": "rc",
         "character": "stormtrooper",
         "quote": "You already have, Angular.",
+        "version": "2.0.0"
+    },
+    {
+        "id": 21,
+        "name": "Angular 2 Education",
+        "repo": "timjacobi/angular2-education",
+        "category": "education",
+        "status": "stable",
+        "character": "lightsaber-green",
+        "quote": "Never tell me the odds!",
         "version": "2.1.0"
     }
 ]
