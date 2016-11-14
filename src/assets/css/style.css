@@ -36,6 +36,11 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -267,6 +272,7 @@ header img {
 /* FOOTER */
 
 ngu-footer {
+  background: #0D47A1;
   display: block;
   width: 100%;
 }
@@ -279,13 +285,31 @@ footer {
 }
 
 footer h2 {
-  border-bottom: 1px dashed;
   line-height: 2;
-  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+footer h3 {
+  border-bottom: 1px dotted #bbb;
+}
+
+footer a {
+  color: #ff9800;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 small {
   font-size: 1rem;
+}
+
+.licence {
+  border-top: 1px solid;
+  padding-top: 1rem;
+}
+
+.faq p {
+  margin-bottom: 2rem;
 }
 
 
