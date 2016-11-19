@@ -17,7 +17,7 @@
         "status": "stable",
         "character": "lightsaber-green",
         "quote": "I've been waiting for you. We meet again at last.",
-        "version": "2.0.0"
+        "version": "2.2.1"
     },
     {
         "id": 3,
@@ -47,7 +47,7 @@
         "status": "alpha",
         "character": "c3po",
         "quote": "Aren't you a little short for Angular?",
-        "version": "2.0.0"
+        "version": "2.2.0"
     },
     {
         "id": 6,
@@ -117,7 +117,7 @@
         "status": "stable",
         "character": "death-star",
         "quote": "I don't, I don't believe it.",
-        "version": "2.1.2"
+        "version": "2.2.1"
     },
     {
         "id": 13,
@@ -137,7 +137,7 @@
         "status": "stable",
         "character": "stormtrooper",
         "quote": "There is no escape. Don't make me destroy you.",
-        "version": "2.1.0"
+        "version": "2.2.0"
     },
     {
         "id": 15,
@@ -170,6 +170,16 @@
         "version": "2.0.0"
     },
     {
+        "id": 23,
+        "name": "Angular 2 Apollo Client",
+        "repo": "apollostack/angular2-apollo",
+        "category": "helpers",
+        "status": "rc",
+        "character": "yoda",
+        "quote": "Do. Or do not. There is no try.",
+        "version": "2.2.0"
+    },
+    {
         "id": 18,
         "name": "NG2 Bootstrap",
         "repo": "valor-software/ng2-bootstrap",
@@ -177,7 +187,7 @@
         "status": "rc",
         "character": "chewbacca",
         "quote": "Laugh it up, fuzzball!",
-        "version": "2.0.0-rc.6"
+        "version": "2.0.0"
     },
     {
         "id": 19,
@@ -190,6 +200,16 @@
         "version": "2.0.1"
     },
     {
+        "id": 22,
+        "name": "Clarity Design System",
+        "repo": "vmware/clarity",
+        "category": "ui",
+        "status": "rc",
+        "character": "yoda",
+        "quote": "Mind tricks don’t work on me.",
+        "version": "2.2.0"
+    },
+    {
         "id": 20,
         "name": "PrimeNG",
         "repo": "primefaces/primeng",
@@ -197,7 +217,7 @@
         "status": "rc",
         "character": "stormtrooper",
         "quote": "You already have, Angular.",
-        "version": "2.0.0"
+        "version": "2.1.0"
     },
     {
         "id": 21,
@@ -207,6 +227,6 @@
         "status": "stable",
         "character": "lightsaber-green",
         "quote": "Never tell me the odds!",
-        "version": "2.1.0"
+        "version": "2.2.0"
     }
 ]
