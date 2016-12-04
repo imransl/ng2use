@@ -37,7 +37,7 @@
         "status": "beta",
         "character": "leia",
         "quote": "I am not a committee!",
-        "version": "2.1.0"
+        "version": "2.2.1"
     },
     {
         "id": 5,
@@ -97,7 +97,7 @@
         "status": "stable",
         "character": "leia",
         "quote": "All right, I'll give it a try.",
-        "version": "2.1.2"
+        "version": "2.2.0"
     },
     {
         "id": 11,
@@ -107,7 +107,7 @@
         "status": "stable",
         "character": "lightsaber-green",
         "quote": "I won't fail you. I'm not afraid.",
-        "version": "2.1.1"
+        "version": "2.2.1"
     },
     {
         "id": 12,
@@ -180,6 +180,16 @@
         "version": "2.2.0"
     },
     {
+        "id": 24,
+        "name": "Angular 2 Admin Dashboard",
+        "repo": "akveo/ng2-admin",
+        "category": "helpers",
+        "status": "rc",
+        "character": "c3po",
+        "quote": "There has been an awakening. Have you felt it?",
+        "version": "2.2.3"
+    },
+    {
         "id": 18,
         "name": "NG2 Bootstrap",
         "repo": "valor-software/ng2-bootstrap",
@@ -214,10 +224,10 @@
         "name": "PrimeNG",
         "repo": "primefaces/primeng",
         "category": "ui",
-        "status": "rc",
+        "status": "stable",
         "character": "stormtrooper",
         "quote": "You already have, Angular.",
-        "version": "2.1.0"
+        "version": "2.2.0"
     },
     {
         "id": 21,
