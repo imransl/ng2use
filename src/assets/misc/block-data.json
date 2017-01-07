@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "name": "Angular Universal",
-        "repo": "angular/universal",
-        "category": "official",
+        "name": "ng-lightning",
+        "repo": "ng-lightning/ng-lightning",
+        "category": "ui",
         "status": "stable",
         "character": "millenium-falcon",
         "quote": "Impressive. Most Impressive. You have been taught well.",
-        "version": "2.0.0"
+        "version": "2.4.1"
     },
     {
         "id": 2,
@@ -37,27 +37,27 @@
         "status": "beta",
         "character": "leia",
         "quote": "I am not a committee!",
-        "version": "2.2.1"
+        "version": "2.3.1"
     },
     {
         "id": 5,
         "name": "Angular Material 2",
         "repo": "angular/material2",
         "category": "official",
-        "status": "alpha",
+        "status": "beta",
         "character": "c3po",
         "quote": "Aren't you a little short for Angular?",
         "version": "2.2.0"
     },
     {
         "id": 6,
-        "name": "Angular Mobile Toolkit",
-        "repo": "angular/mobile-toolkit",
-        "category": "official",
+        "name": "Angular 2 Google Maps",
+        "repo": "SebastianM/angular2-google-maps",
+        "category": "helpers",
         "status": "rc",
         "character": "stormtrooper",
         "quote": "We would be honored if you would join us",
-        "version": "2.0.0"
+        "version": "2.3.1"
     },
     {
         "id": 7,
@@ -97,7 +97,7 @@
         "status": "stable",
         "character": "leia",
         "quote": "All right, I'll give it a try.",
-        "version": "2.2.0"
+        "version": "2.4.1"
     },
     {
         "id": 11,
@@ -117,7 +117,7 @@
         "status": "stable",
         "character": "death-star",
         "quote": "I don't, I don't believe it.",
-        "version": "2.2.1"
+        "version": "2.4.1"
     },
     {
         "id": 13,
@@ -137,7 +137,7 @@
         "status": "stable",
         "character": "stormtrooper",
         "quote": "There is no escape. Don't make me destroy you.",
-        "version": "2.2.0"
+        "version": "2.3.0"
     },
     {
         "id": 15,
@@ -147,7 +147,7 @@
         "status": "stable",
         "character": "darth-vader",
         "quote": "If you only knew the power of the Dark Side",
-        "version": "2.0.0"
+        "version": "2.2.4"
     },
     {
         "id": 16,
@@ -157,7 +157,7 @@
         "status": "rc",
         "character": "lightsaber-green",
         "quote": "I ain't in this for your revolution",
-        "version": "2.1.2"
+        "version": "2.3.1"
     },
     {
         "id": 17,
@@ -177,7 +177,7 @@
         "status": "rc",
         "character": "yoda",
         "quote": "Do. Or do not. There is no try.",
-        "version": "2.2.0"
+        "version": "2.3.1"
     },
     {
         "id": 24,
@@ -197,7 +197,7 @@
         "status": "rc",
         "character": "chewbacca",
         "quote": "Laugh it up, fuzzball!",
-        "version": "2.0.0"
+        "version": "2.1.0"
     },
     {
         "id": 19,
@@ -217,7 +217,7 @@
         "status": "rc",
         "character": "yoda",
         "quote": "Mind tricks don’t work on me.",
-        "version": "2.2.0"
+        "version": "2.4.1"
     },
     {
         "id": 20,
@@ -227,7 +227,7 @@
         "status": "stable",
         "character": "stormtrooper",
         "quote": "You already have, Angular.",
-        "version": "2.2.0"
+        "version": "2.4.0"
     },
     {
         "id": 21,
@@ -237,6 +237,16 @@
         "status": "stable",
         "character": "lightsaber-green",
         "quote": "Never tell me the odds!",
+        "version": "2.4.0"
+    },
+    {
+        "id": 25,
+        "name": "Angular 2 Lumen Starter Kit",
+        "repo": "jaesung2061/anvel",
+        "category": "starters",
+        "status": "stable",
+        "character": "chewbacca",
+        "quote": "There has been an awakening. Have you felt it?",
         "version": "2.2.0"
     }
 ]
