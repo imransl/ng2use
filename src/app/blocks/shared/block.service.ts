@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/cache';
 
 import { Block } from './block.model';
 
@@ -19,8 +18,7 @@ export class BlockService {
 
     return this.http.get(url)
       .map((res: Response) => res.json())
-      .catch(this.handleError)
-      .cache();
+      .catch(this.handleError);
   }
 
   getBlockDetails(repo: string) {
@@ -28,8 +26,7 @@ export class BlockService {
 
     return this.http.get(url)
       .map((res: Response) => res.json())
-      .catch(this.handleError)
-      .cache();
+      .catch(this.handleError);
   }
 
   private handleError(error: Response | any) {

@@ -10,7 +10,7 @@ export interface Block {
     // version is optional for now
     version?: string;
 
-    // show is used to toggle a block    
+    // show is used to toggle a block
     show?: boolean;
 
     // get these through github api
