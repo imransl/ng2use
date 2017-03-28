@@ -10,6 +10,8 @@ import { BlockService } from './shared';
 })
 export class BlocksComponent implements OnInit {
   blockList$: Observable<Block[]>;
+  searchTerm: string;
+  filterTerm: string;
 
   constructor(private blockService: BlockService) { }
 
